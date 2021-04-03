@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Sunil's Game</title>
+    <style>
+        body{
+            background-color: #FFFF99;
+        }
+        .outputbox{
+            border:1px solid black;
+            background-color: white;
+            padding:10px;
+            box-shadow: 2px 2px 34px red;
+            display: none;
+        }
+        .title{
+            background-color: white; 
+            border:1px solid #998989; 
+            box-shadow: 2px 2px 20px #1eff00; 
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-sm-12 title">
+                <h2 class="display-5 text-center">SUNIL'S STONE, PAPER, SCISSOR GAME.</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-5" style="height:100vh;">
+            <div class="col-md-12 text-center">
+                <button id="start-button" class="btn btn-outline-primary">Start Game</button>
+                <button id="reset-button" class="btn btn-outline-danger m-4">Reset Game</button>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 outputbox" id="resultstyle">
+                            <p id="userinput"></p>
+                            <p id="computerinput"></p>
+                            <p id="result"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer>
+
+        const startGame = document.getElementById("start-button");
+        const resetGame = document.getElementById("reset-button");
+        let userInputField = document.getElementById("userinput");
+        let computerInputField = document.getElementById("computerinput");
+        let resultInputField = document.getElementById("result");
+        let resultStyle = document.getElementById("resultstyle");
+        let resultStyleClass = document.querySelector(".outputbox");
+
+
+        /*const prompts = parseInt(prompt("Type a number :",10));
+        console.log(prompts);
+        const buttonElement = document.getElementById("button");
+        let array = [1,2,3,4,5];
+        function buttonHandler(){
+            let index;
+            let randomNumber = parseInt (Math.random()*array.length);
+            console.log(array[randomNumber]);
+            
+        }*/
+
+
+        function startGameHandler(){
+        const defaultInput = "STONE";
+        let userChoiceInput;
+        let userInput;
+        let computerInput;
+        let userInputValid;
+
+        userChoiceInput = prompt("Type your choice among STONE, PAPER or SCISSOR : ");
+        userInputValid = userChoiceInput.toUpperCase();
+
+            if(userInputValid != "STONE" & userInputValid != "PAPER" & userInputValid != "SCISSOR"){
+                userInput = defaultInput;
+                console.log(`userInput:${userInput}`);
+                alert(`You entered invalid choice so default choice ${defaultInput} is taken as your choice`);
+                userInputField.innerHTML =`<h6 class="text-center" style="font-size:20px; color:green;">User Input : <span style="font-size:20px; color:red;"> ${userInput} </span></h6>`;
+            }else{
+                userInput = userInputValid;
+                console.log(userInput);
+                userInputField.innerHTML =`<h6 class="text-center" style="font-size:20px; color:green;">User Input : <span style="font-size:20px; color:red;"> ${userInput} </span></h6>`;
+            }
+
+            let randomInput = Math.random();
+            console.log(randomInput);
+            if(randomInput <= 0.3){
+                computerInput = "STONE";
+            }else if(randomInput > 0.3 & randomInput < 0.8){
+                computerInput = "PAPER";
+            }else if(randomInput >= 0.8){
+                computerInput = "SCISSOR";
+            }
+            console.log(`computerInput:${computerInput}`);
+            computerInputField.innerHTML =`<h6 class="text-center" style="font-size:20px; color:green;">Computer Input : <span style="font-size:20px; color:red;"> ${computerInput} </span></h6>`;
+
+        if(userInput === "PAPER" & computerInput === "STONE" ||
+        userInput === "STONE" & computerInput === "SCISSOR" ||
+        userInput === "SCISSOR" & computerInput === "PAPER" ){
+            console.log("YOU WIN");
+            resultInputField.innerHTML =`<h6 class="text-center" style="font-size:20px; color:green;">Result: <span style="font-size:20px; color:red;"> You Win!</span></h6>`;
+        }else if(userInput === computerInput){
+            console.log("MATCH DRAW");
+            resultInputField.innerHTML =`<h6 class="text-center" style="font-size:20px; color:green;">Result: <span style="font-size:20px; color:red;"> Match Drawn!</span></h6>`;
+        }else{
+            console.log("YOU LOST");
+            resultInputField.innerHTML =`<h6 class="text-center" style="font-size:20px; color:green;">Result: <span style="font-size:20px; color:red;"> You Lost!</span></h6>`;
+        }
+        //resultStyle.className = "outputbox";
+        resultStyleClass.style.display = "block";
+        }
+
+    
+        function endGameHandler(){
+            console.clear();
+            resultStyleClass.style.display = "none";
+        }
+
+        startGame.addEventListener('click', startGameHandler);
+        resetGame.addEventListener('click', endGameHandler);
+        
+    </script>
+     <!-- Option 1: Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
