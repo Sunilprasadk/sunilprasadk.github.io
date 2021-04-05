@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*GENERAL STYLES*/
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*MAIN CONTAINER WITH BACKGROUND IMAGE*/
+
+.container{
+    height:100vh;
+    background-image: linear-gradient(67deg, rgba(161,147,147,0.6727065826330532) 4%, rgba(59,61,61,0.700717787114846) 67%), url(images/abdul-muizz-Z66XTsJqv24-unsplash.jpg);
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+
+@media (max-width:32.5rem) {
+    .container{
+        background-position: center;
+    }
+}
+
+
+/*HEADER*/
+
+header{
+    padding:10px 10px;
+    background-color: #f0e7e7;
+    height:10vh;
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width:24.6875rem){
+    header{
+        flex-direction: column;
+        height:auto;
+    }
+    nav{
+        width:100%;
+        padding-top:8px;
+    }
+}
+
+.brand_logobox{
+    display: flex;
+    flex: 1;
+    -webkit-flex:1;
+    -ms-flex:1;
+    -moz-flex:1;
+    height:100%;
+}
+
+.brand_logo{
+    align-self: center;
+    width:38px;
+    height:38px;
+    margin-right:5px;
+}
+
+.brand_text{
+    align-self: center;
+    font-size: 30px;
+    font-family: 'Recursive', sans-serif;
+}
+
+nav{
+    flex:1;
+    -webkit-flex:1;
+    -ms-flex:1;
+    -moz-flex:1;
+}
+
+.nav_links{
+    display: flex;
+    justify-content: space-around;
+    font-size:18px;
+}
+
+.nav_link:hover{
+    border-bottom:2px solid #3aac3a;
+}
+
+
+/*MAIN CONTENT*/
+
+
+.main_content{
+    padding:10px 5px;
+    display:flex;
+    height:80vh;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(85, 80, 80, 0.301);
+    align-items: center;
+}
+
+.main_text-box{
+    width:60%;
+    padding:5px 5px;
+}
+
+.main_text-box p{
+    color:#fffbfb;
+    font-size: 20px;
+}
+
+@media (max-width:24.75rem){
+    .main_text-box{
+        width:100%;
+    }
+    .main_text-box p{
+        font-size: 16px;
+    }
+}
+
+.main_text-box a{
+    display: inline-block;
+    background-color: rgba(248, 149, 0, 0.925);
+    color:white;
+    padding:10px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+
+/*FOOTER*/
+
+.footer{
+    font-size: 15px;
+    padding:10px;
+    text-align: center;
+}
+
+.footer_thanks{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer_website{
+    padding-top: 10px;
+}
+
+
+@media (max-width:24.75rem){
+    .footer{
+        font-size: 10px;
+    }
+}
