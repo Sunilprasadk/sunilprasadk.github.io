@@ -15,6 +15,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: antiquewhite;
+    position: relative;
 }
 
 
@@ -60,6 +61,7 @@ header{
     cursor:pointer;
     top: 23px;
     right: 8px;
+    z-index:20;
 }
 
 .menu_icon div{
@@ -96,17 +98,25 @@ header{
     animation: menu_open .5s ease-in;
 }
 
+#click_menu:checked ~ .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100%;
+    background-color: rgba(92, 88, 88, 0.438);
+}
+
+
 
 @media only screen and (max-width:28rem){
 
     .nav_link a{
+        color:white;
         font-weight: 600;
         font-size: 20px;
     }
 
-    .nav_link a:hover{
-        background-color: whitesmoke;
-    }
 
     #click_menu + label{
         display: block;
@@ -118,9 +128,8 @@ header{
         position: absolute;
         top:10.5%;
         right:0%;
-        height:100vh;
-        width:80vw;
-        background-color: #ccc;
+        width:100vw;
+        background-color: #f08080;
         justify-content: center;
         align-items: center;
         z-index: 2;
@@ -134,19 +143,20 @@ header{
 /*ANIMATION*/
 @keyframes menu_open {
     0%{
-        transform: translateX(300px);
+        transform: translateY(-300px);
     }
     100%{
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 
 
 /*FOOTER*/
+footer{
+    background-color:aliceblue ;
+}
 .footer{
     width:100%;
-    position: absolute;
-    bottom: 0;
     font-size: 15px;
     padding:10px;
     text-align: center;
@@ -155,7 +165,6 @@ header{
 .footer_thanks{
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
 }
 
 .footer_website{
