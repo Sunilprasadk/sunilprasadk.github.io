@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Background*/
+body{
+    background: linear-gradient(67deg, rgba(252,140,0,0.7595413165266106) 4%,
+     rgba(236,10,159,0.700717787114846) 46%, rgba(236,10,68,0.700717787114846) 99%);  
+    font-family: 'Roboto Mono', monospace;      
+}
+
+/*Wrapper*/
+.userinput{
+    width:100%;
+    height:100%;
+    padding:0.3125rem;
+    display: flex;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    flex-direction: column;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    padding-top:1rem;
+    padding-bottom: 25rem;
+    align-items: center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    text-align: center;
+    font-size: 1.25rem;
+    color:whitesmoke;
+}
+
+.userinput h3{
+    margin-top:5rem;
+}
+
+/*Divisions inside Wrapper*/
+.userinput div{
+    margin-top: 5rem;
+}
+
+/*Button*/
+.userinput_todo a{
+    width:25%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2rem;
+    padding:.5rem;
+    background-color: #fff;
+    border-radius: 9%;
+}
+
+.usertodo_add{
+    display: inline-block;
+    color:black;
+}
+
+.usertodo_add:hover{
+    background-color: #8691b7;
+    color:white;
+    border:0.0625rem solid white;
+}
+
+/*To-Do list items*/
+.userinput_todolist{
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    flex-direction: column;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    align-items: center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+}
+
+
+.userinput_todolist  li{
+    border: 0.0625rem solid white;
+    padding: 0.625rem 1.2875rem;
+    margin-bottom: 0.3125rem;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+
+.userinput_todolist  li:hover{
+    background-color: rgb(65, 216, 65);
+}
+
+/*Input field Styles*/
+input[type="text"]{
+    width:100%;
+    font-size: 1rem;
+    border:none;
+    padding-top:.5rem;
+    padding-bottom:.5rem;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+input[type="text"]::placeholder{
+    font-size: 0.9375rem;
+}
+
+input[type=text]:focus { 
+    outline: none;
+    border-bottom: 0.1875rem solid darkblue;
+}
+
+.userinput_todolist li::before{
+    content: "👉";
+}
+
+/*Footer*/
+footer{
+    padding:1rem;
+    border-top: 1px solid #fff;
+    color:white;
+    text-align: center;
+}
