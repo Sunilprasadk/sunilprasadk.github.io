@@ -69,6 +69,11 @@ header{
     height:100%;
 }
 
+.brand_logobox a{
+    display:flex; 
+    color:black;
+}
+
 .brand_logo{
     align-self: center;
     width:38px;
