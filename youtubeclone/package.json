@@ -1,0 +1,14 @@
+{
+  "name": "youtubeclone",
+  "version": "1.0.0",
+  "description": "This is youtube clone",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "sunilprasad k",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

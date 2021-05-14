@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*Basic design set-up*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Basic design disable default scrollbar*/
+
+html, body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
+
+/*Basic design set-up anchor text*/
+
+a{
+    text-decoration: none;
+    color: #505050;
+}
+
+
+/*Basic design set-up input field*/
+
+input[type=text]{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 15px;
+    outline: none;
+    border: 1px solid #cccccc;
+}
+
+input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    color: #898989;
+    font-weight: 400;
+}
+
+input:focus{
+    border:1px solid #0000ff8e;
+}
+
+
+/*Basic design set-up custom scrollbar*/
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+  
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+border-radius: 20px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+/*HEADER*/
+
+/*Header - Searchbar with profile,search and navigation*/
+
+.searchbar{
+
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    height:6vh;
+    margin: 10px;
+
+    /*YouTube logo and menu icon*/
+
+    &_logoarea{
+
+        cursor: pointer;
+
+        @media(max-width:584px){
+            width:50vw;
+            margin-right: auto;
+        }
+
+
+        .menu{
+            display: inline-block;
+            width: 17px;
+            margin: 6px;
+            cursor:pointer;
+
+            @media(max-width:584px){
+                width:14%;
+                margin-bottom: 6px;
+            }
+        }
+
+        .logo{
+            width:90px;
+            display: inline-block;
+            margin-left: 10px;
+
+            @media(max-width:584px){
+                width:65%;
+                margin-left: 0%;
+            }
+        }
+
+    }
+
+    /*Searchbar - Input filed, Search button and Microphone*/
+
+
+    &_searcharea{
+
+        margin: auto;
+        text-align: center;
+        width:60%;
+
+        @media (max-width:584px){
+            margin:0;
+            width:25%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
+        }
+
+        .searchfield{
+            width:60%;
+            padding:8px;
+
+            @media (max-width:583px){
+                display: none;
+            }
+        }
+
+        .searchbutton{
+            background: #f8f8f8;
+            color: #828282;
+            border: 1px solid #cccccc;
+            border-left: none;
+            cursor: pointer;
+            margin-left: -4px;
+            font-size: 14px;
+            padding:9px 20px;
+
+            @media (max-width:584px){
+                background-color: white;
+                border: none;
+                color: black;
+                font-size: 20px;
+            }
+
+            @media (max-width:360px){
+                padding:0;
+                font-size: 14px;
+            }
+        }
+        
+        .microphone{
+            width: 21px;
+            height: 21px;
+            margin-bottom: -6px;
+            cursor: pointer;
+        }
+
+    }
+
+    /*Profile - User photo and Bell icon*/
+
+    &_profilearea{
+
+        @media (max-width:584px){
+            width:25vw;
+        }
+
+        .bell{
+            width:25px;
+            margin:5px;
+            cursor: pointer;
+
+            @media (max-width:360px){
+                width:34%;
+            }
+        }
+        
+        .profile{
+            width:40px;
+            border-radius: 50%;
+            cursor: pointer;
+
+            @media (max-width:360px){
+                width:45%;
+            }
+        }
+
+    }
+    
+}
+
+
+
+/*MAIN CONTENT*/
+
+/*Main content - Sidebar Navigation*/
+.content{
+    height:calc(100vh - 40px);
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+
+    &_sidebar{
+        width:18vw;
+        height: 90vh;
+        overflow-y: hidden;
+
+        @media (max-width:968px) {
+            display: none;
+        }
+
+        &:hover{
+            overflow-y: scroll;
+        }
+
+        &-item:not(.below){
+            display:flex;
+            align-items: center;
+            font-size: 14px;
+            color:#030303;
+            padding:12px;
+
+
+            & + h3{
+                border-top: 1px solid #e5e5e5;
+            }
+
+            &:hover{
+                background-color: #e5e5e5;
+            }
+
+
+            img{
+                margin-right: 5px;
+                margin-bottom: -3px;
+            }
+        }
+
+        &-item-home{
+            background-color: #e5e5e5;
+        }
+
+        &-item-settings{
+            border-top: 1px solid #e5e5e5;
+        }
+
+        &-item-sendfeedback{
+            border-bottom:1px solid #e5e5e5
+        }
+
+        .below{
+            margin-top:10px;
+            font-size: 12px;
+            text-align: left;
+            padding:0px 20px;
+
+            a{
+                color:#606060;
+            }
+        }
+    }
+
+    &_sidebaritems{
+        margin-top: 4px;
+
+        .footer-text{
+            font-size: 13px;
+            padding:5px;
+            font-family: 'Roboto Mono', monospace;
+        }
+        .footer-text{
+            border-bottom: 1px solid #e5e5e5;
+        }
+    }
+
+    /*Videos Area*/
+
+    &_videos{
+        width:85vw;
+        border-top: 1px solid #e5e5e5;
+        overflow-y: scroll;
+
+        @media (max-width:968px) {
+            width: 100vw;
+        }
+
+        &-layout{
+            background-color: #f9f9f9;
+            padding:20px;
+        }
+    }
+
+    /*Videos area - Categories of videos - Top*/
+
+    &_top-categories{
+        position: fixed;
+        background-color: white;
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        text-align: center;
+        width:100%;
+        list-style-type: none;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-bottom: 1px solid #e5e5e5;
+        overflow: hidden;
+        z-index:100;
+
+        &:hover{
+            overflow-x: scroll;
+        }
+
+        &::-webkit-scrollbar{
+            height:7px;
+        }
+    }
+
+    &_top-categoryitem{
+        color: #030303;
+        background-color: #f2f2f2;
+        margin-right: 20px;
+        border:1px solid #dcdcdc;
+        border-radius: 20px;
+        font-size: 14px;
+        padding:5px 10px;
+
+        &:hover{
+            background-color: #e5e5e5;
+        }
+    }
+
+    /*For overall videos only*/
+
+    .content_videos-layout{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 56px;
+    }
+
+     /*For each video and it's info*/
+
+    &_video{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        position: relative;
+        min-height:23vh;
+        width:264px;
+        cursor: pointer;
+
+        @media (max-width:584px){
+            width:80vw;
+        }
+
+        /*Container of video - individually*/
+
+        .box{
+            
+            /*Video tag*/
+            
+            video{
+                width:100%;
+                -o-object-fit:cover;
+                object-fit:cover;
+            }
+
+            /*Video - Shortcut icons when hover*/
+
+            .videohovericonwatchlater{
+                position: absolute;
+                top: 7px;
+                right: 7px;
+                opacity: 0;
+
+
+                &:before{
+                    content: "WATCH LATER";
+                    background-color: black;
+                    color:white;
+                    padding:6px;
+                    font-size: 10px;
+                    letter-spacing: 2px;
+                    position: absolute;
+                    top:0px;
+                    right:25px;
+                    width:90px;
+                    opacity: 0;
+                }
+
+
+                img{
+                    background-color: black;
+                    padding: 4px;
+                }
+            }
+
+            .videohovericonaddtoqueue{
+                position: absolute;
+                top: 38px;
+                right: 7px;
+                opacity: 0;
+
+                &:before{
+                    content: "ADD TO QUEUE";
+                    background-color: black;
+                    color:white;
+                    padding:6px;
+                    font-size: 10px;
+                    letter-spacing: 1px;
+                    position: absolute;
+                    top:0px;
+                    right:25px;
+                    width:90px;
+                    opacity: 0;
+                }
+
+
+                img{
+                    background-color: black;
+                    padding: 4px;
+                }
+            }
+
+            /*Video shortcut icons get displayed when we hover on video, then if that icon hovered - the text will display*/
+
+
+            &:hover .videohovericonaddtoqueue,
+            &:hover .videohovericonwatchlater{
+                opacity: 1;
+
+                &:hover::before{
+                    -webkit-animation: slide-left 0.5s both;
+	                animation: slide-left 0.5s both;
+                }
+            }
+        }
+
+        /*Video info*/
+
+        &-bottom{
+            display: flex;
+            display:-webkit-box;
+            display:-ms-flexbox;
+
+            div:first-of-type{
+                width:15%;
+            }
+
+            .bottom-text{
+                width:80%;
+            }
+
+            img{
+                width:35px;
+                height:35px;
+                border-radius: 50%;
+            }
+            &-title{
+                padding-left:5px;
+                font-size: 15px;
+                margin-top:10px;
+                margin-bottom: 10px;
+                vertical-align: middle;
+                color:#030303;
+            }
+            &-creator{
+                font-size: 15px;
+                color:#717171;
+            }
+            &-info{
+                font-size: 15px;
+                color:#717171;
+
+                span{
+                    width: 5px;
+                    display: inline-block;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: #717171;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+
+    }
+
+    /*Video tag - Controls like play, pause are disabled*/
+
+    &_video video::-webkit-media-controls {
+        display: none;
+    }
+}
+
+/*FUNCTIONALITY*/
+
+/*Functionality for the sidebar navigation - when the menu icon clicked, the expanded sidebar navigation reduced to small width*/
+
+.small{
+    width:8vw;
+
+    img{
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    a{
+        font-size: 10px;
+    }
+}
+
+/*For the above, this will remove the unwanted more navigation*/
+
+.sidenone{
+    display:none;
+}
+
+/*For the above, when the sidebar navigation reduced to small width, the remaining videos total width increased*/
+
+.videosgrid{
+    width:92vw;
+}
+
+/*To center the videos*/
+.videoslayout{
+    justify-content: center;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+}
+
+
+/*This is for the header search field, when the device width upto 583px*/
+
+.searchsmall{
+   display: block !important;
+   width:80vw !important;
+   z-index: 100 !important;
+}
+
+/*For the above, it will make the width which defined below*/
+
+.searchbarsearchareasmall{
+    width:90vw;
+}
+
+/*For the above, it will make the remove the searchbar logo and menu*/
+
+.searchbarlogonone{
+    display: none;
+}
+
+/*For the above, it will make the remove the searchbar's user profile and bell icon*/
+
+.searchbarprofilenone{
+    display: none;
+}
+
+/*This is applied, when the device width upto 583px. It will remain in the top of entire page, when menu icon clicked*/
+
+.overlay{
+    position:absolute;
+    top:9%;
+    left:0%;
+    width:100vw;
+    height:100vh;
+    background-color: #524c4cb9;
+    z-index: 100;
+}
+
+/*This is applied, when the device width upto 583px. It will open above the overlay, when menu icon clicked. Sidebar navigation in small screens*/
+
+.sidebarside{
+    display: block;
+    position: fixed;
+    top:9%;
+    left:0;
+    width:50vw;
+    background-color: #ffffff;
+    z-index:200;
+    -webkit-animation: sidebarview 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: sidebarview 0.4s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;  
+}
+
+
+/*ANIMATIONS*/
+
+
+
+/*Animations for sidebar navigation*/
+
+@keyframes sidebarview {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+}
+
+/*Animations for navigation in each individual video (watch later & add to queue)*/
+
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+              opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+              opacity: 1;
+    }
+}

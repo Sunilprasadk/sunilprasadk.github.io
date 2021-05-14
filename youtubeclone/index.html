@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is YouTube's interface clone. It is also responsive across devices">
+    <meta name="keywords" content="HTML, CSS, SCSS, JavaScript">
+    <meta name="author" content="Sunilprasad Kuppusamy">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/svg/youtube_icon.svg" type="image/icon type">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="searchbar">
+            <div class="searchbar_logoarea" id="searchbarsmalllogo">
+                <img src="images/YoutubeMenu.png" alt="Youtube Menu" class="menu" id="menubar">
+                <img src="images/YoutubeLogo.png" alt="YouTube Logo" class="logo">
+            </div>
+            <div class="searchbar_searcharea" id="searchbarsearcharea">
+                <input type="text" placeholder="Search" class="searchfield" id="fieldsearch">
+                <button type="submit" class="searchbutton"><i id="searchbutton" class="fa fa-search"></i></button>
+                <img src="images/YoutubeMicrophone.png" alt="Youtube Microphone" class="microphone">
+            </div>
+            <div class="searchbar_profilearea" id="searchbarsmallprofile">
+                <img src="images/YoutubeBell.png" alt="Youtube Bell" class="bell">
+                <img src="images/YoutubeProfile.jpg" alt="Youtube Profile" class="profile">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="content_sidebar" id="sidebarContent">
+                <ul class="content_sidebaritems">
+                    <li class="content_sidebar-item content_sidebar-item-home">
+                        <a href="#"> <img src="images/svg/icons8-home.svg" id="sidenavimg" alt=""> Home </a>
+                    </li>
+                    <li class="content_sidebar-item content_sidebar-item-explore">
+                        <a href="#"> <img src="images/svg/compass-with-white-needles.svg" id="sidenavimg" alt=""> Explore </a>
+                    </li>
+                    <li class="content_sidebar-item content_sidebar-item-subscriptions">
+                        <a href="#"> <img src="images/svg/subscription.svg" id="sidenavimg" alt=""> Subscriptions </a>
+                    </li>
+                    <div id="sidenavnone">
+                        <h3 class="content_sidebar-item sidenav-secondary">SUBSCRIPTIONS</h3>
+                        <li class="content_sidebar-item sidenav-secondary subscriptions" >
+                            <a href="#"> <img src="images/svg/music-player.svg" alt=""> Music </a>
+                        </li>
+                        <li class="content_sidebar-item sidenav-secondary subscriptions">
+                            <a href="#"> <img src="images/svg/trophy.svg" alt=""> Sports </a>
+                        </li>
+                        <li class="content_sidebar-item sidenav-secondary ">
+                            <a href="#"> <img src="images/svg/youtube.svg" alt=""> Gaming </a>
+                        </li>
+                        <li class="content_sidebar-item sidenav-secondary subscriptions" >
+                            <a href="#"> <img src="images/svg/movie-media-player.svg" alt=""> Movies </a>
+                        </li>
+                        <h3 class="content_sidebar-item  " >MORE FROM YOUTUBE</h3>
+                        <li class="content_sidebar-item sidenav-secondary subscriptions">
+                            <a href="#">  <img src="images/svg/youtube (1).svg" alt=""> YouTube Premium </a>
+                        </li>
+                        <li class="content_sidebar-item  subscriptions">
+                            <a href="#"> <img src="images/svg/movie-media-player.svg" alt=""> Movies</a></li>
+                        <li class="content_sidebar-item sidenav-secondary subscriptions">
+                            <a href="#"> <img src="images/svg/youtube.svg" alt=""> Gaming </a>
+                        </li>
+                        <li class="content_sidebar-item  subscriptions">
+                            <a href="#"> <img src="images/svg/podcast-media.svg" alt=""> Live </a>
+                        </li>
+                        <li class="content_sidebar-item  subscriptions">
+                            <a href="#"> <img src="images/svg/cloth-store.svg" alt=""> Fashion & Beauty </a>
+                        </li>
+                        <li class="content_sidebar-item  subscriptions">
+                            <a href="#"> <img src="images/svg/bulb-lighting.svg" alt=""> Learning </a>
+                        </li>
+                        <li class="content_sidebar-item  subscriptions">
+                            <a href="#"> <img src="images/svg/trophy.svg" alt=""> Sports </a>
+                        </li>
+                        <li class="content_sidebar-item  subscriptions content_sidebar-item-settings">
+                            <a href="#"> <img src="images/svg/gear.svg" alt=""> Settings </a>
+                        </li>
+                        <li class="content_sidebar-item  subscriptions" >
+                            <a href="#"> <img src="images/svg/challenge-target.svg" alt=""> Report history </a>
+                        </li>
+                        <li class="content_sidebar-item  subscriptions" >
+                            <a href="#"> <img src="images/svg/question-mark-round.svg" alt=""> Help </a>
+                        </li>
+                        <li class="content_sidebar-item  subscriptions content_sidebar-item-sendfeedback">
+                            <a href="#"> <img src="images/svg/pencil-square.svg" alt=""> Send feedback </a>
+                        </li>
+
+                        <li class="content_sidebar-item  " >
+                            <p><a href="#">About</a> <a href="#">Press</a> <a href="#">Copyright</a></p>
+                        </li>
+                        <li class="content_sidebar-item  below" >
+                            <p><a href="#">Contact us</a> <a href="#">Creators</a></p>
+                        </li>
+                        <li class="content_sidebar-item  below" >
+                            <p><a href="#">Advertise</a> <a href="#">Developers</a></p>
+                        </li>
+                        <br>
+
+                        <li class="content_sidebar-item  below" >
+                            <p><a href="#">Terms</a> <a href="#">Privacy</a>  <a href="#">Policy & Safety</a> </p>
+                        </li>
+                        <li class="content_sidebar-item  below" >
+                            <p><a href="#">How youtube works</a></p>
+                        </li>
+                        <li class="content_sidebar-item  below" >
+                            <p><a href="#">Test new features</a></p>
+                        </li>
+                        <br>
+                    
+                        <p class="content_sidebar-item  below" class="nonesmalldis" style="border-bottom: 1px solid #e5e5e5; padding-bottom: 20px;">
+                            <a href="#">&#169; 2021 Google LLC</a>
+                        </p>
+                        <p class="footer-text  below">
+                            Thanks to
+                            <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>
+                            <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>
+                            <a href="https://www.flaticon.com/authors/balraj-chana"  title="Balraj Chana">Balraj Chana</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>
+                            <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>
+                            <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>
+                            <a href="" title="Chanut">Chanut</a> from <a href="https://www.flaticon.com/"  title="Flaticon">www.flaticon.com</a><br>
+                            <a href="" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>
+                            <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>
+                            <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>
+                            <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>
+                        </p>
+                        <p class="footer-text">Cloned by K.Sunilprasad 👨‍💻 for modern browsers.</p>
+                        <p class="footer-text">This is not my design. In order to practice my web develpment skills, I try to make the exact design of YouTube.</p>
+                    </div>
+                </ul>
+            </div>
+            
+            <div class="content_videos" id="maincontent">
+                <ul class="content_top-categories" id="content_top-categories-id">
+                    <li class="content_top-categoryitem"><a href="#"> All</a></li>
+                    <li class="content_top-categoryitem"><a href="#"> Live</a></li>
+                    <li class="content_top-categoryitem"><a href="#"> Music</a></li>
+                    <li class="content_top-categoryitem"><a href="#"> Web series</a></li>
+                    <li class="content_top-categoryitem"><a href="#"> Tamil Cinema</a></li>
+                    <li class="content_top-categoryitem"><a href="#"> A. R. Rahman</a></li>
+                    <li class="content_top-categoryitem"><a href="#"> Polimer Tv</a></li>
+                    <li class="content_top-categoryitem"><a href="#"> Comedies</a></li>
+                    <li class="content_top-categoryitem"><a href="#"> Cricket</a></li>
+                </ul>
+
+                <div id="overlaybody"></div>
+
+
+                <div class="content_videos-layout" id="mainlayout">
+                    <div class="content_video">
+                        <div class="box">
+                            <video loop poster="images/vidthumb/About Books Tamil.png" class="clip" muted>
+                                <source src="images/vidthumb/An Overview of Books.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="videohovericonwatchlater"><img src="images/svg/clock-line.svg" alt=""></div>
+                            <div class="videohovericonaddtoqueue"><img src="images/svg/add_to_queue_24px.svg" alt=""></div>
+                        </div>
+                        <div class="content_video-bottom">
+                            <div>
+                                <img src="images/YoutubeProfile.jpg" alt="Video Creator Profile">
+                            </div>
+                            <div>
+                                <p class="content_video-bottom-title">An overview about books in Tamil</p>
+                                <p class="content_video-bottom-creator">Sunilprasad Kuppusamy</p>
+                                <p class="content_video-bottom-info">100 views <span></span> 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_video">
+                        <div class="box">
+                            <video loop poster="images/vidthumb/About Books Tamil.png" class="clip" muted>
+                                <source src="images/vidthumb/An Overview of Books.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="videohovericonwatchlater"><img src="images/svg/clock-line.svg" alt=""></div>
+                            <div class="videohovericonaddtoqueue"><img src="images/svg/add_to_queue_24px.svg" alt=""></div>
+
+                        </div>
+                        <div class="content_video-bottom">
+                            <div>
+                                <img src="images/YoutubeProfile.jpg" alt="Video Creator Profile">
+                            </div>
+                            <div>
+                                <p class="content_video-bottom-title">An overview about books in Tamil</p>
+                                <p class="content_video-bottom-creator">Sunilprasad Kuppusamy</p>
+                                <p class="content_video-bottom-info">100 views <span></span> 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_video">
+                        <div class="box">
+                            <video loop poster="images/vidthumb/About Books Tamil.png" class="clip" muted>
+                                <source src="images/vidthumb/An Overview of Books.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="videohovericonwatchlater"><img src="images/svg/clock-line.svg" alt=""></div>
+                            <div class="videohovericonaddtoqueue"><img src="images/svg/add_to_queue_24px.svg" alt=""></div>
+
+                        </div>
+                        <div class="content_video-bottom">
+                            <div>
+                                <img src="images/YoutubeProfile.jpg" alt="Video Creator Profile">
+                            </div>
+                            <div>
+                                <p class="content_video-bottom-title">An overview about books in Tamil</p>
+                                <p class="content_video-bottom-creator">Sunilprasad Kuppusamy</p>
+                                <p class="content_video-bottom-info">100 views <span></span> 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_video">
+                        <div class="box">
+                            <video loop poster="images/vidthumb/About Books Tamil.png" class="clip" muted>
+                                <source src="images/vidthumb/An Overview of Books.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="videohovericonwatchlater"><img src="images/svg/clock-line.svg" alt=""></div>
+                            <div class="videohovericonaddtoqueue"><img src="images/svg/add_to_queue_24px.svg" alt=""></div>
+
+                        </div>
+                        <div class="content_video-bottom">
+                            <div>
+                                <img src="images/YoutubeProfile.jpg" alt="Video Creator Profile">
+                            </div>
+                            <div>
+                                <p class="content_video-bottom-title">An overview about books in Tamil</p>
+                                <p class="content_video-bottom-creator">Sunilprasad Kuppusamy</p>
+                                <p class="content_video-bottom-info">100 views <span></span> 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_video">
+                        <div class="box">
+                            <video loop poster="images/vidthumb/About Books Tamil.png" class="clip" muted>
+                                <source src="images/vidthumb/An Overview of Books.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="videohovericonwatchlater"><img src="images/svg/clock-line.svg" alt=""></div>
+                            <div class="videohovericonaddtoqueue"><img src="images/svg/add_to_queue_24px.svg" alt=""></div>
+
+                        </div>
+                        <div class="content_video-bottom">
+                            <div>
+                                <img src="images/YoutubeProfile.jpg" alt="Video Creator Profile">
+                            </div>
+                            <div>
+                                <p class="content_video-bottom-title">An overview about books in Tamil</p>
+                                <p class="content_video-bottom-creator">Sunilprasad Kuppusamy</p>
+                                <p class="content_video-bottom-info">100 views <span></span> 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_video">
+                        <div class="box">
+                            <video loop poster="images/vidthumb/About Books Tamil.png" class="clip" muted>
+                                <source src="images/vidthumb/An Overview of Books.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="videohovericonwatchlater"><img src="images/svg/clock-line.svg" alt=""></div>
+                            <div class="videohovericonaddtoqueue"><img src="images/svg/add_to_queue_24px.svg" alt=""></div>
+
+                        </div>
+                        <div class="content_video-bottom">
+                            <div>
+                                <img src="images/YoutubeProfile.jpg" alt="Video Creator Profile">
+                            </div>
+                            <div>
+                                <p class="content_video-bottom-title">An overview about books in Tamil</p>
+                                <p class="content_video-bottom-creator">Sunilprasad Kuppusamy</p>
+                                <p class="content_video-bottom-info">100 views <span></span> 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_video">
+                        <div class="box">
+                            <video loop poster="images/vidthumb/About Books Tamil.png" class="clip" muted>
+                                <source src="images/vidthumb/An Overview of Books.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="videohovericonwatchlater"><img src="images/svg/clock-line.svg" alt=""></div>
+                            <div class="videohovericonaddtoqueue"><img src="images/svg/add_to_queue_24px.svg" alt=""></div>
+
+                        </div>
+                        <div class="content_video-bottom">
+                            <div>
+                                <img src="images/YoutubeProfile.jpg" alt="Video Creator Profile">
+                            </div>
+                            <div>
+                                <p class="content_video-bottom-title">An overview about books in Tamil</p>
+                                <p class="content_video-bottom-creator">Sunilprasad Kuppusamy</p>
+                                <p class="content_video-bottom-info">100 views <span></span> 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_video">
+                        <div class="box">
+                            <video loop poster="images/vidthumb/About Books Tamil.png" class="clip" muted>
+                                <source src="images/vidthumb/An Overview of Books.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="videohovericonwatchlater"><img src="images/svg/clock-line.svg" alt=""></div>
+                            <div class="videohovericonaddtoqueue"><img src="images/svg/add_to_queue_24px.svg" alt=""></div>
+
+                        </div>
+                        <div class="content_video-bottom">
+                            <div>
+                                <img src="images/YoutubeProfile.jpg" alt="Video Creator Profile">
+                            </div>
+                            <div>
+                                <p class="content_video-bottom-title">An overview about books in Tamil</p>
+                                <p class="content_video-bottom-creator">Sunilprasad Kuppusamy</p>
+                                <p class="content_video-bottom-info">100 views <span></span> 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_video">
+                        <div class="box">
+                            <video loop poster="images/vidthumb/About Books Tamil.png" class="clip" muted>
+                                <source src="images/vidthumb/An Overview of Books.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="videohovericonwatchlater"><img src="images/svg/clock-line.svg" alt=""></div>
+                            <div class="videohovericonaddtoqueue"><img src="images/svg/add_to_queue_24px.svg" alt=""></div>
+
+                        </div>
+                        <div class="content_video-bottom">
+                            <div>
+                                <img src="images/YoutubeProfile.jpg" alt="Video Creator Profile">
+                            </div>
+                            <div>
+                                <p class="content_video-bottom-title">An overview about books in Tamil</p>
+                                <p class="content_video-bottom-creator">Sunilprasad Kuppusamy</p>
+                                <p class="content_video-bottom-info">100 views <span></span> 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_video">
+                        <div class="box">
+                            <video loop poster="images/vidthumb/About Books Tamil.png" class="clip" muted>
+                                <source src="images/vidthumb/An Overview of Books.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="videohovericonwatchlater"><img src="images/svg/clock-line.svg" alt=""></div>
+                            <div class="videohovericonaddtoqueue"><img src="images/svg/add_to_queue_24px.svg" alt=""></div>
+
+                        </div>
+                        <div class="content_video-bottom">
+                            <div>
+                                <img src="images/YoutubeProfile.jpg" alt="Video Creator Profile">
+                            </div>
+                            <div>
+                                <p class="content_video-bottom-title">An overview about books in Tamil</p>
+                                <p class="content_video-bottom-creator">Sunilprasad Kuppusamy</p>
+                                <p class="content_video-bottom-info">100 views <span></span> 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_video">
+                        <div class="box">
+                            <video loop poster="images/vidthumb/About Books Tamil.png" class="clip" muted>
+                                <source src="images/vidthumb/An Overview of Books.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="videohovericonwatchlater"><img src="images/svg/clock-line.svg" alt=""></div>
+                            <div class="videohovericonaddtoqueue"><img src="images/svg/add_to_queue_24px.svg" alt=""></div>
+
+                        </div>
+                        <div class="content_video-bottom">
+                            <div>
+                                <img src="images/YoutubeProfile.jpg" alt="Video Creator Profile">
+                            </div>
+                            <div>
+                                <p class="content_video-bottom-title">An overview about books in Tamil</p>
+                                <p class="content_video-bottom-creator">Sunilprasad Kuppusamy</p>
+                                <p class="content_video-bottom-info">100 views <span></span> 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_video">
+                        <div class="box">
+                            <video loop poster="images/vidthumb/About Books Tamil.png" class="clip" muted>
+                                <source src="images/vidthumb/An Overview of Books.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="videohovericonwatchlater"><img src="images/svg/clock-line.svg" alt=""></div>
+                            <div class="videohovericonaddtoqueue"><img src="images/svg/add_to_queue_24px.svg" alt=""></div>
+
+                        </div>
+                        <div class="content_video-bottom">
+                            <div>
+                                <img src="images/YoutubeProfile.jpg" alt="Video Creator Profile">
+                            </div>
+                            <div>
+                                <p class="content_video-bottom-title">An overview about books in Tamil</p>
+                                <p class="content_video-bottom-creator">Sunilprasad Kuppusamy</p>
+                                <p class="content_video-bottom-info">100 views <span></span> 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
