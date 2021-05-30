@@ -62,7 +62,7 @@ input:focus {
   align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  height: 6vh;
+  height: auto;
   margin: 0.625rem;
   /*YouTube logo and menu icon*/
   /*Searchbar - Input filed, Search button and Microphone*/
@@ -127,16 +127,13 @@ input:focus {
           background-color: white;
           border: none;
           color: black;
-          font-size: 1.25rem; } }
-      @media (max-width: 22.5rem) {
-        .searchbar_searcharea .searchbutton {
-          padding: 0;
-          font-size: 0.875rem; } }
+          font-size: 1.25rem;
+          padding: 0.5625rem 0.3rem 0.5625rem 0.5rem; } }
     .searchbar_searcharea .microphone {
       width: 1.3125rem;
       height: 1.3125rem;
-      margin-bottom: -0.375rem;
-      cursor: pointer; }
+      cursor: pointer;
+      vertical-align: middle; }
   @media (max-width: 36.5rem) {
     .searchbar_profilearea {
       width: 25vw; } }
@@ -146,14 +143,16 @@ input:focus {
     cursor: pointer; }
     @media (max-width: 22.5rem) {
       .searchbar_profilearea .bell {
-        width: 34%; } }
+        width: 34%;
+        vertical-align: middle; } }
   .searchbar_profilearea .profile {
     width: 2.5rem;
     border-radius: 50%;
     cursor: pointer; }
-    @media (max-width: 360px) {
+    @media (max-width: 22.5rem) {
       .searchbar_profilearea .profile {
-        width: 45%; } }
+        width: 39%;
+        vertical-align: middle; } }
 
 /*MAIN CONTENT*/
 /*Main content - Sidebar Navigation*/
@@ -174,8 +173,12 @@ input:focus {
     @media (max-width: 60.5rem) {
       .content_sidebar {
         display: none; } }
-    .content_sidebar:hover {
-      overflow-y: scroll; }
+    @media (hover: hover) {
+      .content_sidebar:hover {
+        overflow-y: scroll; } }
+    @media (hover: none) {
+      .content_sidebar {
+        overflow-y: auto; } }
     .content_sidebar-item:not(.below) {
       display: flex;
       align-items: center;
@@ -214,6 +217,8 @@ input:focus {
     width: 85vw;
     border-top: 0.0625rem solid #e5e5e5;
     overflow-y: scroll; }
+    .content_videos::-webkit-scrollbar {
+      width: 0.4375rem; }
     @media (max-width: 60.5rem) {
       .content_videos {
         width: 100vw; } }
@@ -235,8 +240,12 @@ input:focus {
     border-bottom: 0.0625rem solid #e5e5e5;
     overflow: hidden;
     z-index: 100; }
-    .content_top-categories:hover {
-      overflow-x: scroll; }
+    @media (hover: hover) {
+      .content_top-categories:hover {
+        overflow-x: scroll; } }
+    @media (hover: none) {
+      .content_top-categories {
+        overflow: auto; } }
     .content_top-categories::-webkit-scrollbar {
       height: 0.4375rem; }
   .content_top-categoryitem {
@@ -259,7 +268,10 @@ input:focus {
     -ms-flex-pack: center;
     justify-content: center;
     margin-top: 3.5rem;
-    margin-bottom: 3.5rem; }
+    margin-bottom: 3.5rem;
+    overflow-y: scroll; }
+    .content .content_videos-layout ::-webkit-scrollbar {
+      width: 0.4375rem; }
   .content_video {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -412,7 +424,6 @@ input:focus {
 /*This is applied, when the device width upto 583px. It will remain in the top of entire page, when menu icon clicked*/
 .overlay {
   position: absolute;
-  top: 9%;
   left: 0%;
   width: 100vw;
   height: 100vh;
@@ -423,7 +434,6 @@ input:focus {
 .sidebarside {
   display: block;
   position: fixed;
-  top: 9%;
   left: 0;
   width: 50vw;
   background-color: #ffffff;

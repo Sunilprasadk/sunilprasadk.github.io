@@ -56,6 +56,7 @@ input:focus{
     width: 7px;
 }
 
+
   
 /* Track */
 ::-webkit-scrollbar-track {
@@ -85,7 +86,7 @@ background: #555;
     align-items: center;
     -webkit-box-align:center;
     -ms-flex-align:center;
-    height:6vh;
+    height:auto;
     margin: 0.625rem;
 
     /*YouTube logo and menu icon*/
@@ -172,19 +173,15 @@ background: #555;
                 border: none;
                 color: black;
                 font-size: 1.25rem;
-            }
-
-            @media (max-width:22.5rem){
-                padding:0;
-                font-size: 0.875rem;
+                padding:0.5625rem 0.3rem 0.5625rem 0.5rem;
             }
         }
         
         .microphone{
             width: 1.3125rem;
             height: 1.3125rem;
-            margin-bottom: -0.375rem;
             cursor: pointer;
+            vertical-align: middle;
         }
 
     }
@@ -204,6 +201,7 @@ background: #555;
 
             @media (max-width:22.5rem){
                 width:34%;
+                vertical-align: middle;
             }
         }
         
@@ -212,8 +210,9 @@ background: #555;
             border-radius: 50%;
             cursor: pointer;
 
-            @media (max-width:360px){
-                width:45%;
+            @media (max-width:22.5rem){
+                width:39%;
+                vertical-align: middle;
             }
         }
 
@@ -240,9 +239,18 @@ background: #555;
         @media (max-width:60.5rem) {
             display: none;
         }
+        
 
-        &:hover{
-            overflow-y: scroll;
+        @media(hover:hover){
+            &:hover{
+                overflow-y: scroll;
+            }
+        }
+
+        @media(hover:none){
+            &{
+                overflow-y: auto;
+            }
         }
 
         &-item:not(.below){
@@ -312,6 +320,10 @@ background: #555;
         border-top: 0.0625rem solid #e5e5e5;
         overflow-y: scroll;
 
+        &::-webkit-scrollbar{
+            width:0.4375rem;
+        }
+
         @media (max-width:60.5rem) {
             width: 100vw;
         }
@@ -340,8 +352,16 @@ background: #555;
         overflow: hidden;
         z-index:100;
 
-        &:hover{
-            overflow-x: scroll;
+        @media (hover:hover){
+            &:hover{
+                overflow-x: scroll;
+            }
+        }
+
+        @media (hover:none){
+            &{
+                overflow: auto;
+            }
         }
 
         &::-webkit-scrollbar{
@@ -376,6 +396,11 @@ background: #555;
         justify-content: center;
         margin-top: 3.5rem;
         margin-bottom: 3.5rem;
+        overflow-y: scroll;
+
+        ::-webkit-scrollbar{
+            width:0.4375rem;
+        }
     }
 
      /*For each video and it's info*/
@@ -604,7 +629,6 @@ background: #555;
 
 .overlay{
     position:absolute;
-    top:9%;
     left:0%;
     width:100vw;
     height:100vh;
@@ -617,7 +641,6 @@ background: #555;
 .sidebarside{
     display: block;
     position: fixed;
-    top:9%;
     left:0;
     width:50vw;
     background-color: #ffffff;
