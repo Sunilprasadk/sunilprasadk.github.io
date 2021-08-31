@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Website: [Website URL](https://github.com/Sunilprasadk/sunilprasadk.github.io/tree/main/frontendmentorchallenges/sunnyside-agency-landing-page-main)
+- Code: [Files and Code](https://sunilprasadk.github.io/frontendmentorchallenges/sunnyside-agency-landing-page-main/)
 
 ## My process
 
