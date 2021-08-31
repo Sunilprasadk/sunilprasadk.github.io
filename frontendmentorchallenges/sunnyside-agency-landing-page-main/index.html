@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="scripts/app.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+<body>
+  <!--Header with Logo, Navlinks, Main title and image-->
+  <header class="header">
+    <div class="header_box">
+      <div class="header_logo">
+        <a href="#"><img src="images/logo.svg" alt="Sunnyside Company Logo"></a>
+      </div>
+      <div class="header_hamburger">
+        <img src="images/icon-hamburger.svg" class="header_hamburger-icon" alt="Hamburger Icon">
+        
+      </div>
+      <ul class="header_links">
+        <div class="header_links-boxSupport"></div>
+        <a href="#"><li class="header_link">About</li></a>
+        <a href="#"><li class="header_link">Services</li></a>
+        <a href="#"><li class="header_link">Projects</li></a>
+        <a href="#"><li class="header_link header_link--special">CONTACT</li></a>
+      </ul>
+    </div>
+    <div class="header_title">
+      <h2 class="header_text">WE ARE CREATIVES</h2>
+      <img src="images/icon-arrow-down.svg" alt="Arrow Image">
+    </div>
+  </header>
+
+ <!--Major services - Feature - 1-->
+  <section class="service_feature">
+    <div class="service_textblock">
+      <div class="service_inner">
+        <h2 class="service_title">Transform your brand</h2>
+        <p class="service_description">We are a full-service creative agency specializing in helping brands grow fast. Engage
+         your clients through ccompelling visuals that do most of the marketing for you.
+        </p>
+        <button class="service_button brand_button">Learn More</button>
+      </div>
+    </div>
+    <picture class="service_image">
+      <source media="(max-width:23.4375em)" class="img" srcset="images/mobile/image-transform.jpg">
+      <source media="(min-width:23.4375em)" class="img" srcset="images/desktop/image-transform.jpg">
+      <img class="img" alt="service-transform image" src="images/desktop/image-transform.jpg">
+    </picture>
+  </section>
+
+  <!--Major services - Feature - 2-->
+  <section class="service_feature">
+    <div class="service_textblock service_textblock-two">
+      <div class="service_inner">
+        <h2 class="service_title">Stand out to the right audience</h2>
+        <p class="service_description">
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.
+        </p>
+        <button class="service_button audience_button">Learn More</button>
+      </div>
+    </div>
+    <picture class="service_image service_image-two">
+      <source media="(max-width:23.4375em)" class="img" srcset="images/mobile/image-stand-out.jpg">
+      <source media="(min-width:23.4375em)" class="img" srcset="images/desktop/image-stand-out.jpg">
+      <img class="img" alt="service-transform image" src="images/desktop/image-stand-out.jpg">
+    </picture>
+  </section>
+
+  <!--Major services - Special - Two features in horizontal direction-->
+  <section class="service_feature">
+    <div class="service_image service_image-special">
+      <picture>
+        <source media="(max-width:23.4375em)" srcset="images/mobile/image-graphic-design.jpg">
+        <source media="(min-width:23.4375em)" srcset="images/desktop/image-graphic-design.jpg">
+        <img alt="service-transform image" src="images/desktop/image-graphic-design.jpg">
+      </picture>
+      <div class="service_inner service_inner-special">
+        <h2 class="service_title service_title-sp1">Graphic Design</h2>
+        <p class="service_description service_description-special service_description-sp1">
+          Great design makes you memorable. We deliver artwork deliver that underscores your brand message and captures potential clients' attention.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="service_image service_image-special">
+      <picture>
+        <source media="(max-width:23.4375em)" srcset="images/desktop/image-photography.jpg">
+        <source media="(min-width:23.4375em)" srcset="images/desktop/image-photography.jpg">
+        <img alt="service-transform image" src="images/desktop/image-photography.jpg">
+      </picture>
+      <div class="service_inner service_inner-special">
+        <h2 class="service_title service_title-sp2">Photography</h2>
+        <p class="service_description service_description-special service_description-sp2">
+          Increase your credibility by getting most of the stunning, high-quality that improve your business image.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--Client testimonials-->
+  <section class="client_testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonials_block">
+      <div class="testimonial">
+        <img src="images/image-emily.jpg" alt="Testimonial image - Emily">
+        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <div class="testimonial_detail">
+          <p class="testimonial_name">Emily R.</p>
+          <p class="testimonial_position">Marketing Director</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img src="images/image-thomas.jpg" alt="Testimonial image - Thomas">
+        <p>Sunnysides's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+        <div class="testimonial_detail">
+          <p class="testimonial_name">Thomas S.</p>
+          <p class="testimonial_position">Chief Operating Officer</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img src="images/image-jennie.jpg" alt="Testimonial image - Jennie">
+        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <div class="testimonial_detail">
+          <p class="testimonial_name">Jennie F.</p>
+          <p class="testimonial_position">Business Owner</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Showcase pictures-->
+  <section class="showcase_pictures">
+    <picture class="showcase_picture">
+      <source media="(max-width:23.4375rem)" class="showcase_picture-img" srcset="images/mobile/image-gallery-milkbottles.jpg">
+      <source media="(min-width:23.4375rem)" class="showcase_picture-img" srcset="images/desktop/image-gallery-milkbottles.jpg">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" class="showcase_picture-img" alt="showcase_picture-Milkbottles">
+    </picture>
+    <picture class="showcase_picture">
+      <source media="(max-width:23.4375rem)" class="showcase_picture-img" srcset="images/mobile/image-gallery-orange.jpg">
+      <source media="(min-width:23.4375rem)" class="showcase_picture-img" srcset="images/desktop/image-gallery-orange.jpg">
+      <img src="images/desktop/image-gallery-orange.jpg" class="showcase_picture-img" alt="showcase_picture-Orange">
+    </picture>
+    <picture class="showcase_picture">
+      <source media="(max-width:23.4375rem)" class="showcase_picture-img" srcset="images/mobile/image-gallery-cone.jpg">
+      <source media="(min-width:23.4375rem)" class="showcase_picture-img" srcset="images/desktop/image-gallery-cone.jpg">
+      <img  src="images/desktop/image-gallery-cone.jpg" class="showcase_picture-img" alt="showcase_picture-Cone">
+    </picture>
+    <picture class="showcase_picture">
+      <source media="(max-width:23.4375rem)" class="showcase_picture-img" srcset="images/mobile/image-gallery-sugar-cubes.jpg">
+      <source media="(min-width:23.4375rem)" class="showcase_picture-img" srcset="images/desktop/image-gallery-sugarcubes.jpg">
+      <img  src="images/desktop/image-gallery-sugarcubes.jpg" class="showcase_picture-img" alt="showcase_picture-Sugarcubes">
+    </picture>
+  </section>
+
+
+  <!--Footer-->
+  <footer class="footer">
+    <h3 class="footer_logo"><a href="#">sunnyside</a></h3>
+    <ul class="footer_links">
+      <a href="#"><li class="footer_link">About</li></a>
+      <a href="#"><li class="footer_link">Services</li></a>
+      <a href="#"><li class="footer_link">Projects</li></a>
+    </ul>
+    <ul class="footer_socialmedia-icons">
+      <a href="#"><li class="socialmedia_icon"><img src="images/icon-facebook.svg" alt=""></li></a>
+      <a href="#"><li class="socialmedia_icon"><img src="images/icon-instagram.svg" alt=""></li></a>
+      <a href="#"><li class="socialmedia_icon"><img src="images/icon-twitter.svg" alt=""></li></a>
+      <a href="#"><li class="socialmedia_icon"><img src="images/icon-pinterest.svg" alt=""></li></a>
+    </ul>
+  </footer>
+
+</body>
+</html>
