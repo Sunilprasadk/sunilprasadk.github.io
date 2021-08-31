@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Website: [Website URL](https://github.com/Sunilprasadk/sunilprasadk.github.io/tree/main/frontendmentorchallenges/sunnyside-agency-landing-page-main)
-- Code: [Files and Code](https://sunilprasadk.github.io/frontendmentorchallenges/sunnyside-agency-landing-page-main/)
+- Source Code: [Files and Code of sunnyside landing page](https://github.com/Sunilprasadk/sunilprasadk.github.io/tree/main/frontendmentorchallenges/sunnyside-agency-landing-page-main)
+- Website: [sunnyside Agency Landing Page](https://sunilprasadk.github.io/frontendmentorchallenges/sunnyside-agency-landing-page-main/)
 
 ## My process
 
