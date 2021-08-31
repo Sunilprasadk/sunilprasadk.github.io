@@ -84,7 +84,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Sunilprasad Kuppusamy](https://www.your-site.com)
+- GitHub Profile - [Sunilprasad Kuppusamy](https://github.com/Sunilprasadk/sunilprasadk.github.io)
 - Frontend Mentor - [@Sunilprasadk](https://www.frontendmentor.io/profile/Sunilprasadk)
 
 
