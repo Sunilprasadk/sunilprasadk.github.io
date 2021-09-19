@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Source Code URL: [View Source Code](https://github.com/Sunilprasadk/sunilprasadk.github.io/tree/main/frontendmentorchallenges/tip-calculator-app-main)
+- Live Site URL: [View Website](https://sunilprasadk.github.io/frontendmentorchallenges/tip-calculator-app-main/)
 
 ## My process
 
