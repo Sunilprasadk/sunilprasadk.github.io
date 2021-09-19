@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Source Code: [Files and Code of sunnyside landing page](https://github.com/Sunilprasadk/sunilprasadk.github.io/tree/main/frontendmentorchallenges/sunnyside-agency-landing-page-main)
+- Website: [sunnyside Agency Landing Page](https://sunilprasadk.github.io/frontendmentorchallenges/sunnyside-agency-landing-page-main/)
 
 ## My process
 
@@ -84,7 +84,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Sunilprasad Kuppusamy](https://www.your-site.com)
+- GitHub Profile - [Sunilprasad Kuppusamy](https://github.com/Sunilprasadk/sunilprasadk.github.io)
 - Frontend Mentor - [@Sunilprasadk](https://www.frontendmentor.io/profile/Sunilprasadk)
 
 
