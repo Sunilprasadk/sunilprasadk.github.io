@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="script.js" defer></script>
+
+ 
+</head>
+<body>
+
+  <p class="header">SPLI<br>TTER</p>
+
+  <div class="container">
+
+    <form class="formfields" id="form"> 
+
+      <div class="formfield">
+        <p class="formfield_label">Bill</p>
+        <img src="images/icon-dollar.svg" alt="Dollar Sign" class="formfield_image dollar">
+        <input type="number/text" id="bill" name="bill" min="0" step=".01" placeholder="0" oninput="myFunction()" class="billfield">
+      </div>
+
+
+      <div class="formfield">
+        <p class="formfield_label">Select Tip %</p>
+        <div class="buttons">
+          <button onclick="myRoot(event)" type="button" value="5%" class="tiprate">5%</button>
+          <button onclick="myRoot(event)" type="button" value="10%" class="tiprate">10%</button>
+          <button onclick="myRoot(event)" type="button" value="15%" class="tiprate">15%</button>
+          <button onclick="myRoot(event)" type="button" value="25%" class="tiprate">25%</button>
+          <button onclick="myRoot(event)" type="button" value="50%" class="tiprate">50%</button>
+          <input type="text" oninput="myFunction()" onclick="myRoot(event)" name="customvalue" id="customvalue" placeholder="Custom" class="tiprate">
+        </div> 
+      </div>
+ 
+
+      <div class="formfield" id="formSubmit">                             
+        <p class="formfield_label numberofpeople">Number of People</p>
+        <img src="images/icon-person.svg" alt="Person Icon" class="formfield_image person">
+        <input type="number" id="numberofpeople" oninput="myFunction()" name="numberofpeople" min="0" placeholder="0" >
+      </div>
+
+
+    </form>
+
+
+    <div class="formresults">
+
+      <div>
+      <div class="formresult">
+
+        <div class="title">
+          <p class="formresult_header">Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <div class="formresult_value" id="tipAmount">$0.00 </div>
+
+      </div>
+
+
+      <div class="formresult">
+        <div class="title">
+          <p class="formresult_header">Total</p>
+          <p>/ person</p>
+        </div>
+        <div class="formresult_value" id="total">$0.00</div>
+      </div>
+
+      </div>
+      <input id="reset" onclick="myReset(event)" type="submit" value="RESET" class="reset">
+      
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,352 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+:root {
+    --FormResult: hsl(183, 100%, 15%);
+    --FontColorMain: hsl(186, 14%, 43%);
+    --InputFieldColor: hsl(189, 41%, 97%);
+    --BodyBackground: hsl(185, 41%, 84%);
+    --FormResultLabel: hsl(189, 41%, 97%);
+    --Container: hsl(0, 0%, 100%);
+    --FormResultValue: hsl(172, 67%, 45%);
+}
+
+body{
+    background-color: var(--BodyBackground);
+    font-size: 16px;
+}
+
+.header{
+    text-align: center;
+    margin-top: 70px;
+    color:var(--FontColorMain);
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+button{
+    border:none;
+    outline:none;
+    cursor: pointer;
+    color:var(--FormResultLabel);
+}
+
+
+.container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width:70%;
+    margin: auto;
+    background-color: var(--Container);
+    margin-top:60px;
+    padding:19px;
+    border-radius: 10px;
+}
+
+.formfields{
+    width:60%;
+    padding:16px;
+}
+
+.formfield:not(:first-child){
+    margin-top: 23px;
+}
+
+.formfield_label{
+    font-size: 11px;
+}
+
+.formfield  p{
+    margin-bottom: 8px;
+}
+
+.formfield img{
+    position: absolute;
+    padding: 18px;
+}
+
+#customvalue::-webkit-input-placeholder{
+    color: var(--FontColorMain);
+}
+
+#customvalue::-moz-placeholder{
+    color: var(--FontColorMain);
+}
+
+#customvalue:-ms-input-placeholder{
+    color: var(--FontColorMain);
+}
+
+#customvalue::-ms-input-placeholder{
+    color: var(--FontColorMain);
+}
+
+.formfield_label,
+#customvalue::placeholder{
+    color: var(--FontColorMain);
+}
+
+input::-webkit-input-placeholder{
+    text-align: right;
+}
+
+input::-moz-placeholder{
+    text-align: right;
+}
+
+input:-ms-input-placeholder{
+    text-align: right;
+}
+
+input::-ms-input-placeholder{
+    text-align: right;
+}
+
+input::placeholder,
+input{
+    text-align: right;
+}
+
+input[type="number/text"],
+input[type="number"]{
+    border:none;
+    outline:none;
+    background-color: var(--InputFieldColor);
+    padding:10px;
+    width:100%;
+    font-size: 24px;
+}
+
+input[type="number"]::-webkit-input-placeholder, input[type="number/text"]::-webkit-input-placeholder{
+    color:hsl(184, 19%, 68%);
+}
+
+input[type="number"]::-moz-placeholder, input[type="number/text"]::-moz-placeholder{
+    color:hsl(184, 19%, 68%);
+}
+
+input[type="number"]:-ms-input-placeholder, input[type="number/text"]:-ms-input-placeholder{
+    color:hsl(184, 19%, 68%);
+}
+
+input[type="number"]::-ms-input-placeholder, input[type="number/text"]::-ms-input-placeholder{
+    color:hsl(184, 19%, 68%);
+}
+
+input[type="number"]::placeholder,
+input[type="number/text"]::placeholder{
+    color:hsl(184, 19%, 68%);
+}
+
+input[type="number"],
+input[type="number/text"],
+input[type="text"]#customvalue{
+    color:var(--FormResult);
+}
+
+input[type="text"]#customvalue{
+    border:none;
+    background-color: var(--InputFieldColor);
+}
+
+.buttons{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width:100%;
+}
+
+.tiprate{
+    width:32%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+
+#customvalue::-webkit-input-placeholder{
+    text-align: center;
+}
+
+
+#customvalue::-moz-placeholder{
+    text-align: center;
+}
+
+
+#customvalue:-ms-input-placeholder{
+    text-align: center;
+}
+
+
+#customvalue::-ms-input-placeholder{
+    text-align: center;
+}
+
+
+#customvalue::placeholder{
+    text-align: center;
+}
+
+.tiprate:not(:last-child){
+    background-color: var(--FormResult);
+}
+
+.numberofpeople{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+
+.formresults{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width:50%;
+    border-radius: 10px;
+    padding:16px;
+    background-color: var(--FormResult);
+}
+
+.formresult{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding:20px;
+}
+
+.formresult_header{
+    color:var(--FormResultLabel);
+    font-size: 11px;
+}
+
+.formresult_header + p{
+    color: var(--FontColorMain);
+    font-size: 11px;
+}
+
+.formresult_value{
+    color:var(--FormResultValue);
+    font-size: 40px;
+}
+
+input[type="submit"]{
+    outline:none;
+    border:none;
+    cursor:pointer;
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin:auto;
+    opacity:.2;
+}
+
+
+.reset{
+    background-color: var(--FormResultValue);
+    color:var(--FormResult);
+    margin-bottom: 20px;
+    padding:10px;
+}
+
+
+.tiprate:hover{
+    background-color: var(--FormResultValue);
+    color:var(--FormResult);
+}
+
+#customvalue.tiprate:focus{
+    outline-color: var(--FormResultValue);
+}
+
+.billfield:focus{
+    border: 2px solid var(--FormResultValue);
+}
+
+.reset:hover{
+    opacity: 1;
+}
+
+
+@media(max-width:53.4375rem){
+    .container{
+        width:80%;
+    }
+}
+@media(max-width:44.6875rem){
+    .container{
+        width:90%;
+    }
+}
+@media(max-width:40.625rem){
+    .tiprate{
+        width:49%;
+    }
+}
+@media(max-width:30.4375rem){
+    .container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .formfields{
+        width:100%;
+    }
+
+    .formresults{
+        width:100%;
+    }
+}
+
+@media(max-width:23.4375rem){
+    .container{
+        width: 100%;
+    }
+}
+
+.error{
+    color: red;
+}
