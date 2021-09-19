@@ -33,10 +33,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Design](screenshots/Desktop Design.png)
-![Desktop Design (Active States)](screenshots/Desktop Design (Active States).png)
-![Mobile Design (Top)](screenshots/Mobile Design (Top).png)
-![Mobile Design (Bottom)](screenshots/Mobile Design (Bottom).png)
+![DesktopDesign](screenshots/Desktop Design.png)
+![DesktopDesignActiveState](screenshots/Desktop Design (Active States).png)
+![MobileDesign](screenshots/Mobile Design (Top).png)
+![MobileDesign](screenshots/Mobile Design (Bottom).png)
 
 ### Links
 
