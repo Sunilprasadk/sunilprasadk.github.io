@@ -1,0 +1,186 @@
+//OUR UNIQUE DESIGN
+
+@mixin primary-text{
+    font-family: 'Rammetto One', cursive;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@mixin secondary-text{
+    font-family: 'Ropa Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+
+    #landing_page{
+    background-color:rgba(14, 48, 94, 0.836);
+    }
+
+
+    a{
+        color:#F9F7F2;
+        font-family: 'Ropa Sans', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+    }
+
+    a:hover,
+    a:checked,
+    a:focus{
+        color:#F9F7F2;
+        text-decoration: none;
+    }
+
+    .landing_box{
+        width:100vw;
+        height:120vh;
+
+        &--texthead{
+            @include primary-text();
+            font-size: 36px;
+            text-align: center;
+            color: #F1B314;
+            line-height: 61px;
+        }
+        &--texttag{
+            @include primary-text();
+            font-size: 24px;
+            line-height: 41px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #BAA754;
+        }
+        &--buttons{
+            @include secondary-text();
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+    //ABOUT PAGE
+
+    #about{
+        background-color:rgba(14, 48, 94, 0.836);
+    }
+
+    .about_title{
+        @include secondary-text();
+        font-size: 48px;
+        line-height: 51px;
+        text-align: center;
+        color: #FCE301;
+        text-align: justify
+    }
+    .about_text{
+        @include secondary-text();
+        font-size: 22px;
+        line-height: 26px;
+        color: #FEFCFC;
+        text-align:justify;
+
+        span{
+            color: #3bc8eb;
+        }
+    }
+}
+
+//PRODUCT PAGE
+
+#products{
+    background-color: #D96262;
+}
+
+#visitTalents{
+    background-color: #BACDB2;
+}
+
+
+//GET AND GIVE JOB
+
+#getandgivejob{
+    background-color: rgba(185, 183, 176, 0.31);
+
+    p{
+        @include secondary-text();
+    }
+}
+
+//ADMIN PANEL
+
+#adminPanel{
+    background-color:rgba(14, 48, 94, 0.836);
+    color:#FEFCFC;
+    @include secondary-text();
+}
+
+
+
+//GET JOB FORM
+
+#getJob,
+#giveJob,
+#formWinners,
+#formProducts,
+#formWork_Status{
+    color:#FEFCFC;
+    background-color: #3B4556;
+    @include secondary-text();
+
+
+    img{
+        width:100%;
+        height:95%;
+        border-radius: 10px;
+        box-shadow: -1px 0px 16px 8px rgba(245,38,15,0.75);
+        -webkit-box-shadow: -1px 0px 16px 8px rgba(245,38,15,0.75);
+        -moz-box-shadow: -1px 0px 16px 8px rgba(245,38,15,0.75);
+    }
+}
+
+
+//GIVE JOB
+
+#giveJob{
+    img{
+        box-shadow: 0px -1px 10px 9px rgba(142,185,235,0.63);
+        -webkit-box-shadow: 0px -1px 10px 9px rgba(142,185,235,0.63);
+        -moz-box-shadow: 0px -1px 10px 9px rgba(142,185,235,0.63);
+    }
+}
+
+//WINNERS FORM
+
+#formWinners{
+    background-color:#2F2F2F;
+
+    img{
+        box-shadow: 0px 1px 10px 9px rgba(232,238,46,0.75);
+        -webkit-box-shadow: 0px 1px 10px 9px rgba(232,238,46,0.75);
+        -moz-box-shadow: 0px 1px 10px 9px rgba(232,238,46,0.75);
+    }
+}
+
+
+//PRODUCTS FORM
+
+#formProducts{
+    background-color: #E79D9F;
+}
+
+
+//WORK STATUS FORM
+
+#formWork_Status{
+    background-color: #EBF5F4;
+    color:#1E1E1E;
+
+    img{
+        box-shadow: 0px 1px 10px 9px rgba(209,149,92,0.75);
+        -webkit-box-shadow: 0px 1px 10px 9px rgba(209,149,92,0.75);
+        -moz-box-shadow: 0px 1px 10px 9px rgba(209,149,92,0.75);
+    }
+}
