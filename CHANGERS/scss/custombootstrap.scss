@@ -1,0 +1,9 @@
+//CUSTOMIZE THE BOOTSTRAP
+
+$theme-colors:(
+    "primary":rgba(154, 126, 3, 0.68)
+);
+
+
+//IMPORT BOOTSTRAP
+@import "../bootstrap-4.5.3/scss/bootstrap.scss";
