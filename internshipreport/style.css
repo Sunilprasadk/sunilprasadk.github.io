@@ -361,10 +361,13 @@ body{
     }
 }
 
-@media(max-width:22.5rem){
+@media(max-width:23.0625rem){
     .fourth_left_bottom div{
         flex-direction: column;
     }
+}
+
+@media(max-width:22.5rem){
     .fourth_left_bottom p{
         width:100%;
     }
