@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+
+.column{
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    margin-left:100px;
+    margin-right:100px;
+    margin-top:50px;
+}
+
+.column_item{
+    width:100%;
+    position: relative;
+}
+
+.left{
+    width:45%;
+}
+
+.right{
+    width:45%;
+}
+
+.column_item--head{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight:bold;
+    color:#434a54;
+    margin-bottom:24px;
+}
+
+.column_item--body{
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    font-weight:500;
+    line-height: 18px;
+    color:#434a54;
+}
+
+.column_item--body progress{
+    width:100%;
+}
+
+.column_item1{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    color:#434a54;
+    margin-top:8px;
+}
+
+.column_item1{
+    width:100%;
+}
+
+.column_item1--left{
+    width:25%;
+    font-weight:500;
+}
+
+.column_item1 div{
+    color:#434a54;
+}
+
+.column-2 .column_item .column_item--body{
+    margin-bottom:10px;
+}
+
+
+.column-3 .column_item .full .column_item--body-header h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:bold;
+    color:#434a54;
+    margin-bottom:8px;
+}
+
+.column-3 .column_item .full .column_item--body-header span{
+    color:#434a54;
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    font-weight:600;
+}
+
+.column-3 .column_item .full .column_item--body-header p{
+    margin-bottom:8px;
+    line-height:18px;
+}
+
+.column-3 .column_item .full{
+    width:70%;
+    background-color: #ffff;
+    padding:33px;
+    border: 2px solid #eeecec;
+    border-left: 2px solid #4a89dc;
+    border-radius: 0px 6px 6px 0px;
+    margin-bottom: 24px;
+    margin-left:34px;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(196,192,196,1);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(196,192,196,1);
+    box-shadow: 0px 1px 1px 0px rgba(196,192,196,1);
+}
+
+.column-3 .column_item .special{
+    border-left: 2px solid #37bc9b;
+}
+
+.column-3 .column_item .column_item--head{
+    margin-bottom: 56px;
+}
+
+progress[value]{
+    -webkit-appearance: none;
+    appearance: none;
+    height:10px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #e9ecef;
+    border-radius: 3px;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #4a89dc;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.column-2 .right progress[value]::-webkit-progress-value{
+    background-color: #37bc9b;
+}
+
+.sideline{
+    width: 2px;
+    height: 88%;
+    background-color: #e6e9ed;
+    position: absolute;
+    top: 64px;
+    left: 0;
+}
+
+.full-1,
+.full-2,
+.full-3{
+    position: relative;
+}
+
+.sideline_indicator-1,
+.sideline_indicator-2,
+.sideline_indicator-3{
+    position: absolute;
+    top:-4px;
+    left:-41px;
+    z-index:2;
+}
+
+.break{
+    flex-direction: column;
+}
+.breakline{
+    margin-bottom: 12px;
+}
+
+
+.header{
+    background-color: #4a89dc;
+    padding-left: 100px;
+    padding-top: 40px;
+    display: flex;
+    height: 166px;
+    margin-bottom: 97px;
+}
+
+.header_left img{
+    width:43%;
+    border:5px solid white;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(196,192,196,1);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(196,192,196,1);
+    box-shadow: 0px 1px 1px 0px rgba(196,192,196,1);
+}
+
+.header_right-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight:600;
+    color:white;
+    margin-top: 32px;
+    margin-bottom: 7px;
+}
+
+.header_right-subtitle{
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    font-weight:lighter;
+    line-height: 18px;
+    color:white;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    color:#434a54;
+    margin-bottom: 12px;
+}
+
+.bottom{
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.bottom_right{
+    margin-top:45px;
+}
+
+.breakline_label{
+    font-weight:bolder;
+}
