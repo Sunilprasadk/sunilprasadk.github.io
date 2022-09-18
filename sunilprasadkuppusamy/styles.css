@@ -42,7 +42,7 @@
     font-family: 'Roboto', sans-serif;
     font-size:14px;
     font-weight:500;
-    line-height: 18px;
+    line-height: 24px;
     color:#434a54;
 }
 
@@ -172,16 +172,21 @@ progress[value]::-webkit-progress-value {
 
 .header{
     background-color: #4a89dc;
-    padding-left: 100px;
+    padding-left: 50px;
     padding-top: 40px;
     display: flex;
-    height: 166px;
+    height: 165px;
     margin-bottom: 97px;
 }
 
+.header_right{
+    width:70%;
+}
+
 .header_left img{
-    width:43%;
+    width:30%;
     border:5px solid white;
+    border-radius: 50%;
     -webkit-box-shadow: 0px 1px 1px 0px rgba(196,192,196,1);
     -moz-box-shadow: 0px 1px 1px 0px rgba(196,192,196,1);
     box-shadow: 0px 1px 1px 0px rgba(196,192,196,1);
@@ -223,4 +228,97 @@ a{
 
 .breakline_label{
     font-weight:bolder;
+}
+
+
+@media only screen and (max-width: 840px) {
+    .header{
+        padding-left: 25px;
+    }
+
+    .column{
+        margin-left:25px;
+        margin-right: 25px;
+    }
+
+    .column-3 .column_item .full{
+        width:auto;
+    }
+
+}
+
+@media only screen and (max-width: 732px) {
+
+    .header{
+        margin-bottom: 10px;
+    }
+
+    .header_left{
+        width:25%;
+    }
+
+    .header_left img{
+        width:100%;
+    }
+
+    .header_right{
+        margin-left:25px;
+    }
+}
+
+@media only screen and (max-width: 539px) {
+    .header{
+        padding-bottom:40px;
+    }
+
+    .column{
+        display: block;
+    }
+    .left,
+    .right{
+        width:auto;
+        margin-top:25px;
+    }
+
+    .column-2 .column_item .column_item--body{
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 467px) {
+    .header{
+        display: block;
+        height:auto;
+        padding-bottom:40px;
+    }
+
+    .header_right-title{
+        font-size: 24px;
+    }
+
+    .header_right-subtitle{
+        font-size: 12px;
+    }
+
+    .header_right{
+        margin-left:0px;
+    }
+
+    .header_left {
+        width: 50%;
+    }
+
+    .header_left img {
+        width: 100%;
+    }
+
+    .column_item--head{
+        font-size: 18px;
+    }
+}
+ 
+@media only screen and (max-width: 310px){
+    .column-3 .column_item .full{
+        padding:20px;
+    }
 }
