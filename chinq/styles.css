@@ -1,0 +1,679 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: #F7F2F2;
+}
+
+@media only screen and (max-width: 470px) {
+  header {
+    padding: 8px 20px;
+  }
+}
+
+header .logo {
+  width: 16%;
+}
+
+@media only screen and (max-width: 1115px) {
+  header .logo {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  header .logo {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  header .logo {
+    width: 45%;
+  }
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header nav {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #624D49;
+}
+
+header nav a {
+  color: #624D49;
+}
+
+@media only screen and (max-width: 470px) {
+  header nav a {
+    font-size: 16px;
+  }
+}
+
+header nav a img {
+  width: 24px;
+}
+
+@media only screen and (max-width: 470px) {
+  header nav a img {
+    width: 20px;
+  }
+}
+
+header nav a:hover {
+  border: 1px dashed #EF8410;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+header nav a span {
+  vertical-align: middle;
+}
+
+ul {
+  display: flex;
+  padding: 16px 40px;
+  background-color: #F1EFEF;
+  position: relative;
+}
+
+@media only screen and (max-width: 470px) {
+  ul {
+    padding: 8px 20px;
+  }
+}
+
+ul li {
+  list-style: none;
+  margin-right: 16px;
+}
+
+ul li a {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #624D49;
+}
+
+@media only screen and (max-width: 470px) {
+  ul li a {
+    font-size: 16px;
+  }
+}
+
+ul li a img {
+  width: 24px;
+  vertical-align: sub;
+  margin-right: 8px;
+}
+
+@media only screen and (max-width: 470px) {
+  ul li a img {
+    width: 20px;
+  }
+}
+
+ul span {
+  width: 77px;
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 62px;
+  background: #624D49;
+  border-radius: 27px 20px 0px 0px;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 470px) {
+  ul span {
+    left: 30px;
+  }
+}
+
+ul .nav-2 {
+  width: 77px;
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 178px;
+  background: #624D49;
+  border-radius: 27px 20px 0px 0px;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 470px) {
+  ul .nav-2 {
+    left: 128px;
+  }
+}
+
+ul a:hover + span {
+  opacity: 1;
+}
+
+/*HERO*/
+
+.hero {
+  margin-bottom: 32px;
+  text-align: center;
+  padding: 24px;
+  background-color: rgba(217, 217, 217, 0.16);
+}
+
+.hero .header h3 {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 57px;
+  color: #624D49;
+  margin-bottom: 16px;
+}
+
+.hero .header h3 .header_space {
+  letter-spacing: 0.08em;
+  color: #EF8410;
+}
+
+@media only screen and (max-width: 620px) {
+  .hero .header h3 img {
+    width: 24px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .hero .header h3 {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+
+.hero .header h3 .special_hero {
+  font-family: "Sansita Swashed", sans-serif;
+  font-style: "normal";
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  color: #624D49;
+}
+
+@media only screen and (max-width: 620px) {
+  .hero .header h3 .special_hero {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+
+.hero .header span {
+  color: #631000;
+}
+
+.hero .header p {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #624D49;
+  margin-bottom: 32px;
+}
+
+.hero .header p span {
+  font-weight: 600;
+}
+
+.body img {
+  width: 70%;
+}
+
+@media only screen and (max-width: 930px) {
+  .body img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .body img {
+    width: 100%;
+  }
+}
+
+.footer p {
+  margin-top: 32px;
+  font-family: "Sansita Swashed", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 29px;
+  color: #624D49;
+}
+
+.footer p span {
+  font-weight: 900;
+}
+
+.footer p span img {
+  width: 16px;
+  vertical-align: middle;
+}
+
+/*PRODUCTS OVERVIEW*/
+.productsoverview {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+    padding: 24px;
+  }
+  
+  .productsoverview .header h3 {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    color: #EF8410;
+    margin-bottom: 16px;
+  }
+  
+  .productsoverview .header span {
+    color: #631000;
+  }
+  
+  .productsoverview .header p {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #624D49;
+    margin-bottom: 16px;
+  }
+  
+  .productsoverview .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px;
+  }
+  
+  @media only screen and (max-width: 670px) {
+    .productsoverview .body {
+      margin: 8px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 340px) {
+    .productsoverview .body {
+      margin: 8px;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .productsoverview .body .item {
+    background-color: rgba(217, 217, 217, 0.16);
+    border-radius: 18.7333px;
+    padding: 32px;
+    margin: 16px;
+    width: 85%;
+  }
+  
+  @media only screen and (max-width: 670px) {
+    .productsoverview .body .item {
+      width: 90%;
+      padding: 16px;
+    }
+  }
+  
+  .productsoverview .body .item div {
+    width: 100%;
+  }
+  
+  .productsoverview .body .item div img {
+    width: 100%;
+  }
+  
+  .productsoverview .footer p {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #624D49;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  
+  .productsoverview .footer button {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: normal;
+    color: #f7f7f7;
+    background-color: #EF8410;
+    border-radius: 6px;
+    padding: 16px 20%;
+    border: white;
+  }
+  
+  /*CHECKOUT PROCESS*/
+  .chinqooperprocess {
+    background-color: white;
+    margin-top: 40px;
+  }
+  
+  .chinqooperprocess .processes {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 670px) {
+    .chinqooperprocess .processes {
+      justify-content: space-evenly;
+    }
+  }
+  
+  .chinqooperprocess .processes .process {
+    display: flex;
+    flex-direction: column;
+    width: 8%;
+    margin: 16px;
+    margin-right: 48px;
+  }
+  
+  @media only screen and (max-width: 1115px) {
+    .chinqooperprocess .processes .process {
+      width: 12%;
+    }
+  }
+  
+  @media only screen and (max-width: 670px) {
+    .chinqooperprocess .processes .process {
+      width: 25%;
+      margin: 0;
+      margin-right: 16px;
+    }
+    .chinqooperprocess .processes .process img {
+      width: 100%;
+    }
+  }
+  
+  .chinqooperprocess .processes .process:last-child {
+    margin-right: 0;
+  }
+  
+  .chinqooperprocess .processes .process span {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #624D49;
+    margin-top: 24px;
+  }
+
+/*CONTACT FORM*/
+
+.contactform {
+  background-color: #EF8410;
+  text-align: center;
+  padding: 32px;
+}
+
+@media only screen and (max-width: 537px) {
+  .contactform {
+    padding: 16px;
+  }
+}
+
+.contactform p {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+  margin-bottom: 8px;
+}
+
+.contactform button {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
+  color: #EF8410;
+  background-color: #FBFBFB;
+  border-radius: 3px;
+  padding: 12px;
+  border: white;
+}
+
+@media only screen and (max-width: 537px) {
+  .contactform button {
+    margin-top: 16px;
+  }
+}
+
+.contactform button .icon {
+  margin-right: 8px;
+}
+
+.contactform form input {
+  margin-top: 16px;
+  width: 30%;
+  background: #FBFBFB;
+  border: none;
+  border-radius: 3px;
+  padding: 16px;
+  outline: none;
+  margin-right: 16px;
+}
+
+@media only screen and (max-width: 537px) {
+  .contactform form input {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 16px;
+  }
+}
+
+.contactform form input::placeholder {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #2F2F30;
+}
+
+/*CHINQOOPER STORY*/
+.chinqooperstory {
+    padding-top: 60px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgba(217, 217, 217, 0.16);
+}
+  
+  .chinqooperstory .header h3 {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    color: #EF8410;
+    margin-bottom: 16px;
+  }
+  
+  .chinqooperstory .header span {
+    color: #631000;
+  }
+  
+  .chinqooperstory .header p {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #624D49;
+    margin-bottom: 16px;
+  }
+  
+  .chinqooperstory .body .story {
+    display: inline-block;
+    width: 70%;
+    padding: 32px;
+    background-color: white;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    border-radius: 16px;
+  }
+  
+  @media only screen and (max-width: 340px) {
+    .chinqooperstory .body .story {
+      width: 90%;
+    }
+  }
+  
+  .chinqooperstory .body .story p {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #624D49;
+  }
+  
+  .chinqooperstory .body .story p span {
+    font-weight: 600;
+  }
+  
+  .chinqooperstory .footer p {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #624D49;
+    margin: 32px 0;
+  }
+
+
+/*FOOTER*/
+
+footer {
+  background-color: #EF8410;
+  text-align: center;
+  padding: 32px;
+}
+
+@media only screen and (max-width: 256px) {
+  footer {
+    padding: 8px;
+  }
+}
+
+footer div {
+  margin-bottom: 36px;
+}
+
+footer .footer_top p {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #FBFBFB;
+  margin-bottom: 20px;
+}
+
+footer .footer_top button {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
+  color: #EF8410;
+  background-color: #FBFBFB;
+  border-radius: 3px;
+  padding: 12px;
+  border: white;
+}
+
+footer .contact_details h3 {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #FBFBFB;
+  margin-bottom: 20px;
+}
+
+footer .contact_details .contact_detail {
+  margin-bottom: 20px;
+}
+
+footer .contact_details .contact_detail a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #FBFBFB;
+}
+
+footer .social_links {
+  display: inline-flex;
+}
+
+footer .social_links .social_link {
+  margin-right: 16px;
+  margin-bottom: auto;
+}
+
+footer .social_links .social_link img {
+  width: 40px;
+}
+
+footer .social_links .social_link:last-child {
+  margin-right: 0;
+}
+
+footer .footer_bottom {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FBFBFB;
+  margin-bottom: 0;
+}
+
