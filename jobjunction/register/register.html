@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login to find your job - Job Junction</title>
-    <link rel="icon" type="image/gif/png" href="images/job_junction-logo-head.png">
+    <title>Register to find your job - Job Junction</title>
+    <link rel="icon" type="image/gif/png" href="../images/job_junction-logo-head.png">
     <script src="https://kit.fontawesome.com/7bb9495e7b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="../index.js" defer></script>
 </head>
 <body id="body">
 
-
     <div class="menu_icon" id="menu">
         <div class="first_div"></div>
         <div class="second_div"></div>
         <div class="third_div"></div>
+    </div>
+
+    <div class="modal_container modalFunc">
+        <div class="modal">
+            <div class="modal_bottom">
+                <p>Logged In Successfully 😊</p>
+                <button type="submit" onclick="href='#';" class="modal_send">Let's Go 🚀</button>
+            </div>
+        </div>
     </div>
 
     <header>
@@ -25,9 +33,9 @@
         </div>
         <nav>
             <ul class="nav_links" id="nav_links">
-                <li class="nav_link"><a href="#" target="_blank">Post Job</a></li>
-                <li class="nav_link"><a href="#" target="_blank">Get Job</a></li>
-                <li class="nav_link special_link" id="special_link"><a href="#" id="contact_link">Let's Go!</a></li>
+                <li class="nav_link"><a href="../growthzone/growthzone.html">Growth Zone ✅</a></li>
+                <li class="nav_link"><a href="../jobs/jobs.html">Jobs 💼</a></li>
+                <li class="nav_link special_link" id="special_link"><a href="#" id="contact_link">Login / Register</a></li>
             </ul>
         </nav>
     </header>
@@ -44,6 +52,8 @@
                         <input type="text" placeholder="Your Name">
                         <input type="email" placeholder="Your Email">
                         <input type="tel" placeholder="Your Mobile Number">
+                        <input type="password" placeholder="Your Password">
+                        <input type="password" placeholder="Confirm Your Password">
                     </div>
                     <div><button type="submit" class="button_send" style="margin:16px auto; cursor: pointer;">REGISTER</button></div>
                 </form>

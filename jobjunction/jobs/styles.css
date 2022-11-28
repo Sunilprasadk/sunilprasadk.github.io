@@ -98,103 +98,13 @@ header{
     position: relative;
 }
 
-/*topsection container - divs*/
-._hero{
-    width:50%;
-}
-
-/*topsection container - left heading*/
-.hero_left-heading{
-    font-family: 'Zilla Slab';
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 48px;
-    color: #2F2F30;
-}
-
-/*topsection container - right image*/
-.hero_right img{
-    width:80%;
-    height:80%;
-}
-
-/*topsection highlight(color change)*/
-.special_primary{
-    font-family: 'Zilla Slab';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    color: #2246C2;
-}
-
-/*topsection highlight(font style change)*/
-.special_secondary{
-    font-family: 'Zilla Slab';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 36px;
-    color: #2F2F30;
-}
-
-/*topsection left container*/
-.hero_left{
-    margin-left:16px;
-}
-
-/*top section left - content*/
-.hero_left-content{
-    margin-top:16px;
-    width:75%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 128.69%;
-    color: #8F8F92;
-}
-
-/*top section left - statistics container*/
-.hero_left-statistics{
-    margin-top:32px;
-    display: flex;
-}
-
-/*top section left - statistic container*/
-.hero_left-stat{
-    margin-right:32px;
-    text-align:center;
-}
-
-/*top section left - statistic number*/
-.hero_left-statnum{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    color: #2F2F30;
-}
-
-/*top section left - statistic label*/
-.hero_left-statlabel{
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 128.69%;
-    text-align: center;
-    color: #8F8F92;
-}
-
-/*top section-right container*/
-.hero_right{
-    text-align:center;
-}
-
 /*lead-form container*/
 .header_bottom{
     background-color: #2246C2;
     padding:24px;
     padding-left:48px;
+    text-align: center;
+    margin-bottom: 24px;
 }
 
 /*lead-form container content*/
@@ -204,14 +114,20 @@ header{
     font-weight: 400;
     font-size: 20px;
     line-height: 38px;
-    display: flex;
-    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     color: #F8F8F8;
 }
 
 /*form tag*/
 form{
     padding-bottom: 12px;
+}
+
+/*target button icon*/
+.icon{
+    margin-right:8px;
 }
 
 /*input tag*/
@@ -260,20 +176,21 @@ input::placeholder{
     margin-right:8px;
 }
 
-/*footer - header - head*/
-.footer .header .head{
+
+/*section containers - head*/
+.ourjobs .header .head{
     font-family: 'Zilla Slab';
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
-    line-height: 40px;
+    line-height: 58px;
     color: #2F2F30;
     text-align: center;
 }
 
-/*footer - header - description*/
-.footer .header .description{
-    margin:20px 16%;
+/*section containers - description*/
+.ourjobs .header .description{
+    margin:10px 16%;
     text-align: center;
     font-family: 'Montserrat';
     font-style: normal;
@@ -282,54 +199,124 @@ input::placeholder{
     line-height: 128.69%;
     text-align: center;
     color: #8F8F92;
-} 
-
-/*footer*/
-.footer{
-    margin-top:52px;
 }
 
-/*footer - body - content container*/
-.footer .body .content{
-    background-color: #2246C2;
-    width:100%;
-}
-
-/*footer - body - content - form container*/
-.form_footer{
-    width:80%;
-    margin: auto;
-    padding-top:32px;
-}
-
-/*footer - body - content - form container (input + button)*/
-.form_footer div{
+/*our jobs - body container*/
+.ourjobs .body{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+/*our jobs - body - content container*/
+.ourjobs .body .jobs{
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: auto;
+    width:80%;
 }
 
-/*footer - body - content - form container (inputs)*/
-.form_footer div input{
-    width:46%;
-    margin-right:8px;
-    margin-bottom: 16px;
+/*our jobs - body - jobs - job container*/
+.job{
+    align-items: center;
+    background: #f6f6f6;
+    border: 1px solid #d5daed;
+    border-radius: 6px;
+    padding:16px 16px;
+    width:45%;
+    margin-right:2.5%;
+    margin-left:2.5%;
+    margin-bottom: 2.5%;
 }
-  
-@media only screen and (max-width: 916px){
-    .brand_box img{
-        width:75%;
+
+/*our jobs - body - jobs - job - p*/
+.job p{
+    font-family: 'Zilla Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #2F2F30;
+}
+
+/*our jobs - body - jobs - job - title*/
+.job .job_title{
+    color:#2F2F30;
+}
+
+/*our jobs - body - jobs - job - category*/
+.job .job_category{
+    display: inline-block; 
+    background-color:#395bc1; 
+    color:white; 
+    padding:5px 10px; 
+    border-radius: 25px; 
+    font-size:16px;
+    margin-top: 8px; 
+}
+
+/*our jobs - body - jobs - job - company*/
+.job .job_company{
+    margin: 12px 0;
+    text-decoration: none;
+    font-family: 'Zilla Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #395bc1;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*our jobs - body - jobs - job - description*/
+.job .job_description{
+    margin:20px 0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    color: #8F8F92;
+    line-height: 20px;
+}
+
+/*our jobs - body - jobs - job - button*/
+.job_button{
+    background: #2246C2;
+    border:1px solid #2246C2;
+    border-radius: 3px;
+    padding:8px 16px;
+    font-family: 'Zilla Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FBFBFB;
+    text-align: center;
+    margin-top:16px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1040px){
+    .job p{
+        font-size: 20px;
     }
+}
 
+@media only screen and (max-width: 916px){
     .button_send{
         width:24%;
     }
 }
 
+@media only screen and (max-width: 840px){
+    
+    .job{
+        width: 75%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .ourjobs .body .jobs{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -339,11 +326,8 @@ input::placeholder{
 }
 
 @media only screen and (max-width: 724px){
-    .form_footer div{
-        flex-direction: column;
-    }
-    .form_footer div input{
-        width:80%;
+    .brand_box img {
+        width: 90%;
     }
     .button_send {
         width: 25%;
@@ -359,9 +343,6 @@ input::placeholder{
 
     .nav_links{
         display: none;
-    }
-    .brand_box img{
-        width:90%;
     }
     #special_link{
         background-color: #F8F8F8;
@@ -388,37 +369,42 @@ input::placeholder{
     .header_bottom form input{
         width:100%;
     }
-
-    .footer .header .description{
-        margin: 20px;
+    .ourjobs .header .description{
+        margin: 12px 20px;
     }
-
-    .form_footer div{
-        width:100%;
+    .ourjobs .bottom .jobs img{
+        width:auto;
     }
 }
 
-@media only screen and (max-width: 375px){
 
+@media only screen and (max-width: 375px){
     .header_bottom{
         margin-top: 32px;
     }
-
-    .hero_right img{
-        width:100%;
+    .ourjobs .body .jobs{
+        width: auto;
     }
+
     .button_send{
         width:36%;
     }
 }
 
+@media only screen and (max-width: 346px){
+    .job{
+        width:90%;
+        padding:auto;
+    }
+}
+
 @media only screen and (max-width: 300px){
-    .footer .header .head {
+    .ourjobs .header .head{
         font-size: 24px;
     }
 }
 
-/*styles for hamburger icon (open and close)*/
+/*styles for hamburger open and close*/
 .nav_responsive{
     display: flex;
     position: absolute;

@@ -7,7 +7,15 @@
     box-sizing:border-box;
     list-style-type: none;
 }
-/**/
+
+/*body*/
+body{
+    background: #FBFBFB;
+    font-family: 'Zilla Slab', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Top - Header*/
 header{
     width:100%;
     padding:20px 16px;
@@ -16,27 +24,25 @@ header{
     align-items: center;
 }
 
+/*HeaderContainer*/
 .brand_box{
     display: flex;
     font-size: 20px;
     width:30%;
 }
 
+/*Header-brandbox-Logo*/
 .brand_box img{
     width:55%;
 }
 
-.brand_box h2{
-    color:lightcoral;
-    align-self: center;
-    -webkit-align-self:center;
-}
-
+/*header-navbar-container*/
 .nav_links{
     display: flex;
     align-items: center;
 }
 
+/*header-navbar-link-anchor*/
 .nav_links .nav_link a{
     margin-right: 15px;
     text-decoration: none;
@@ -48,6 +54,8 @@ header{
     color: #2F2F30;
 }
 
+
+/*header-navbar-link-container*/
 .nav_links .special_link{
     background: #2246C2;
     border-radius: 32px;
@@ -55,12 +63,13 @@ header{
     text-align: center;
 }
 
+/*header-navbar-link-anchor-SPECIAL*/
 .nav_links .special_link a{
     color:#FBFBFB;
     margin-left:15px;
 }
 
-
+/*hamburger icon container*/
 .menu_icon{
     display: none;
     position: absolute;
@@ -70,6 +79,7 @@ header{
     z-index:20;
 }
 
+/*hamburger-container-divs*/
 .menu_icon div{
     display:block;
     width:26px;
@@ -79,13 +89,7 @@ header{
     border-radius: 10px;
 }
 
-/**/
-body{
-    background: #FBFBFB;
-    font-family: 'Zilla Slab', serif;
-    font-family: 'Montserrat', sans-serif;
-}
-
+/*topsection container*/
 .hero{
     display: flex;
     flex-direction: row;
@@ -94,10 +98,12 @@ body{
     position: relative;
 }
 
+/*topsection container - divs*/
 ._hero{
     width:50%;
 }
 
+/*topsection container - left heading*/
 .hero_left-heading{
     font-family: 'Zilla Slab';
     font-weight: 500;
@@ -106,11 +112,13 @@ body{
     color: #2F2F30;
 }
 
+/*topsection container - right image*/
 .hero_right img{
     width:80%;
     height:80%;
 }
 
+/*topsection highlight(color change)*/
 .special_primary{
     font-family: 'Zilla Slab';
     font-style: normal;
@@ -119,6 +127,7 @@ body{
     color: #2246C2;
 }
 
+/*topsection highlight(font style change)*/
 .special_secondary{
     font-family: 'Zilla Slab';
     font-style: italic;
@@ -127,10 +136,12 @@ body{
     color: #2F2F30;
 }
 
+/*topsection left container*/
 .hero_left{
     margin-left:16px;
 }
 
+/*top section left - content*/
 .hero_left-content{
     margin-top:16px;
     width:75%;
@@ -142,16 +153,19 @@ body{
     color: #8F8F92;
 }
 
+/*top section left - statistics container*/
 .hero_left-statistics{
     margin-top:32px;
     display: flex;
 }
 
+/*top section left - statistic container*/
 .hero_left-stat{
     margin-right:32px;
     text-align:center;
 }
 
+/*top section left - statistic number*/
 .hero_left-statnum{
     font-family: 'Montserrat';
     font-style: normal;
@@ -161,6 +175,7 @@ body{
     color: #2F2F30;
 }
 
+/*top section left - statistic label*/
 .hero_left-statlabel{
     font-family: 'Montserrat';
     font-weight: 400;
@@ -170,16 +185,19 @@ body{
     color: #8F8F92;
 }
 
+/*top section-right container*/
 .hero_right{
     text-align:center;
 }
 
+/*lead-form container*/
 .header_bottom{
     background-color: #2246C2;
     padding:24px;
     padding-left:48px;
 }
 
+/*lead-form container content*/
 .header_bottom p{
     font-family: 'Zilla Slab';
     font-style: normal;
@@ -191,10 +209,12 @@ body{
     color: #F8F8F8;
 }
 
+/*form tag*/
 form{
     padding-bottom: 12px;
 }
 
+/*input tag*/
 input{
     margin-top: 16px;
     width:30%;
@@ -206,6 +226,7 @@ input{
     margin-right: 16px;
 }
 
+/*target button*/
 .button_send{
     width:12%;
     margin-top: 16px;
@@ -224,6 +245,7 @@ input{
     color: #2246C2;
 }
 
+/*input placeholder*/
 input::placeholder{
     font-family: 'Montserrat';
     font-style: normal;
@@ -233,15 +255,18 @@ input::placeholder{
     color: #2F2F30;
 }
 
+/*target button icon*/
 .icon{
     margin-right:8px;
 }
 
+/*section containers*/
 .ourservices,
 .ourworks{
     margin-top:44px;
 }
 
+/*section containers - head*/
 .ourservices .header .head,
 .ourworks .header .head,
 .happycustomers .header .head,
@@ -256,7 +281,7 @@ input::placeholder{
     text-align: center;
 }
 
-
+/*section containers - description*/
 .ourservices .header .description,
 .ourworks .header .description,
 .happycustomers .header .description,
@@ -273,18 +298,21 @@ input::placeholder{
     color: #8F8F92;
 }
 
+/*our services - body container*/
 .ourservices .body{
     display: flex;
     justify-content: center;
     margin-top: 36px;
 }
 
+/*our sevices - body - content container*/
 .ourservices .body .content{
     display: flex;
     flex-wrap: wrap;
     width:80%;
 }
 
+/*our sevices - body - content*/
 .content_service{
     display: flex;
     align-items: center;
@@ -298,11 +326,7 @@ input::placeholder{
     margin-bottom: 2.5%;
 }
 
-.content_service img{
-    width: 20%;
-    margin-right:16px;
-}
-
+/*our sevices - body - content - text*/
 .content_service p{
     font-family: 'Zilla Slab';
     font-style: normal;
@@ -311,41 +335,24 @@ input::placeholder{
     color: #2246C2;
 }
 
-.ourservices .bottom .head{
-    margin-top: 32px;
-    margin-bottom: 32px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    color: #8F8F92;
-}
-
-.ourservices .bottom .content{
-    text-align: center;
-}
-
-.ourservices .bottom .content img{
-    width:16%;
-    margin:16px;
-}
-
-
+/*our works section container*/
 .ourworks{
     background: #FFFFFF;
 }
 
+/*our works - header - head container*/
 .ourworks .header .head{
    padding-top: 42px;
 }
 
+/*our works - body - content container*/
 .ourworks .body .content{
     display: flex;
     flex-wrap: wrap;
     width:80%;
 }
 
+/*our works - body - content container - content*/
 .ourworks .body .content_project{
     display: flex;
     flex-direction: column;
@@ -358,10 +365,12 @@ input::placeholder{
     z-index:2;
 }
 
+/*our works - body - content container - content - img*/
 .ourworks .body .content_project img{
     width:100%;
 }
 
+/*our works - body - content container - content - title*/
 .ourworks .body .content_project h5{
     font-family: 'Zilla Slab';
     font-style: normal;
@@ -371,6 +380,7 @@ input::placeholder{
     margin-top:32px;
 }
 
+/*our works - body - content container - content - text*/
 .ourworks .body .content_project p{
     font-family: 'Montserrat';
     font-style: normal;
@@ -381,6 +391,7 @@ input::placeholder{
     margin-top:16px;
 }
 
+/*our works - body - content container - content - view more button*/
 .ourworks .body .content_project button{
     background: #2246C2;
     border:1px solid #2246C2;
@@ -395,16 +406,12 @@ input::placeholder{
     margin-top:16px;
 }
 
+/*our works - body - content container - top space*/
 .ourworks .body .content_project:nth-child(even) {
     margin-top:300px;
 }
 
-.decorator1{
-    position: absolute;
-    z-index:1;
-    width:100%;
-}
-
+/*our works - bottom container*/
 .ourworks .bottom{
     background-color: #2246C2;
     text-align: center;
@@ -413,6 +420,7 @@ input::placeholder{
     position:relative;
 }
 
+/*our works - bottom - title*/
 .ourworks .bottom p{
     font-family: 'Zilla Slab';
     font-style: normal;
@@ -423,6 +431,7 @@ input::placeholder{
     margin-bottom:16px;
 }
 
+/*our works - bottom - link*/
 .ourworks .bottom a{
     text-decoration: none;
     font-family: 'Montserrat';
@@ -434,6 +443,7 @@ input::placeholder{
     text-align: center;
 }
 
+/*our works - bottom - link icon*/
 .ourworks .bottom a span{
     font-family: 'Montserrat';
     font-style: normal;
@@ -445,48 +455,61 @@ input::placeholder{
     margin-left:16px;
 }
 
+/*our works - bottom - image*/
 .decimg{
     position: absolute;
     width:4%;
 }
 
+/*our works - bottom - image UIUX*/
 .decimg1{
     top: 23%;
     left: 16%;
 }
 
+/*our works - bottom - image APP DEVELOPMENT*/
 .decimg2{
     bottom: 7%;
     left: 5%;
 }
 
+/*our works - bottom - image END-TO-END SOLUTIONS*/
 .decimg3{
     top: 21%;
     right: 10%;
 }
 
+/*our works - bottom - image WEB DEVELOPMENT*/
 .decimg4{
     right:25%;
     bottom:5%;
 }
 
-
+/*feedback section container*/
 .happycustomers{
     margin-top: 42px;
     padding-bottom: 42px;
 }
 
+/*feedback section - body container*/
 .happycustomers .body{
     display: flex;
     justify-content: center;
 }
 
+/*feedback section - body - content container*/
 .happycustomers .body .content{
     display: flex;
     width: 80%;
     align-items: center;
 }
 
+/*feedback section - body - content - feedback container*/
+.happycustomers .body .content .content_feedbacks{
+    position: relative;
+}
+
+/*feedback section - body - content - feedback container - feedback - text*/
 .happycustomers .body .content .content_feedbacks .feedback p{
     font-family: 'Montserrat';
     font-style: normal;
@@ -497,6 +520,7 @@ input::placeholder{
     margin-bottom:16px;
 }
 
+/*feedback section - body - content - feedback container - feedback - feedback author*/
 .happycustomers .body .content .content_feedbacks .feedback h4{
     font-family: 'Zilla Slab';
     font-style: normal;
@@ -507,15 +531,7 @@ input::placeholder{
     margin-bottom: 24px;
 }
 
-.happycustomers .body .content .content_feedbacks .controls img{
-    width:9%;
-    margin-right:16px;
-}
-
-.happycustomers .body .content .content_feedbacks{
-    position: relative;
-}
-
+/*feedback section - body - content - feedback container - feedback - quote svg*/
 .quote{
     position: absolute;
     top: -13%;
@@ -523,83 +539,25 @@ input::placeholder{
     width: 10%;
 }
 
-
-.ourtechnologies{
-    background-color: #FFFFFF;
-    padding-top:52px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.ourtechnologies .body{
-    display: flex;
-    justify-content: center;
-}
-
-.ourtechnologies .body .content{
-    display: flex;
-    align-items: center;
-}
-
-.ourtechnologies .body .content .content_technologies{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: baseline;
-}
-
-.ourtechnologies .body .content .content_technologies .technology{
-    width:30%;
-    margin:16px;
-    margin-bottom:40px;
-}
-
-.ourtechnologies .body .content .content_technologies p{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 167.2%;
-    color: #8F8F92;
-    margin-top:16px;
-}
-
-.ourtechnologies button{
-    background: #2246C2;
-    border:1px solid #2246C2;
-    border-radius: 3px;
-    padding:8px 16px;
-    font-family: 'Zilla Slab';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    color: #FBFBFB;
-    text-align: center;
-    margin-top:16px;
-    margin-bottom: 52px;
-}
-
-
+/*footer container*/
 .footer{
     margin-top:52px;
 }
 
+/*footer - body - content container*/
 .footer .body .content{
     background-color: #2246C2;
-}
-
-.footer .body .content{
     width:100%;
 }
 
+/*footer - body - content - form*/
 .form_footer{
     width:80%;
     margin: auto;
     padding-top:32px;
 }
 
+/*footer - body - content - form - div*/
 .form_footer div{
     display: flex;
     align-items: center;
@@ -609,26 +567,31 @@ input::placeholder{
     margin: auto;
 }
 
+/*footer - body - content - form - div - input*/
 .form_footer div input{
     width:46%;
     margin-right:8px;
     margin-bottom: 16px;
 }
 
+/*footer - body - content - form - div - input - last child*/
 .form_footer div input:last-child{
     width:100%;
     margin-right:16px;
 }
 
+/*footer bottom*/
+.footer .bottom{
+    background-color: #2246C2;
+}
+
+/*footer - bottom - line*/
 .line{
     border: 1px solid rgb(251 251 251 / 14%);
     margin-bottom: 20px;
 }
 
-.footer .bottom{
-    background-color: #2246C2;
-}
-
+/*footer bottom - head*/
 .footer .bottom .head{
     font-family: 'Zilla Slab';
     font-style: normal;
@@ -639,11 +602,13 @@ input::placeholder{
     margin-bottom: 20px;
 }
 
+/*footer bottom - contact info container*/
 .footer .bottom .contact_info{
     display: flex;
     justify-content: center;
 }
 
+/*footer bottom - contact info - p*/
 .footer .bottom .contact_info p{
     font-family: 'Montserrat';
     font-style: normal;
@@ -655,15 +620,18 @@ input::placeholder{
     margin-right:24px;
 }
 
+/*footer bottom - contact info - p - icons*/
 .footer .bottom .contact_info p span{
     margin-right:8px;
 }
 
+/*footer bottom - social info container*/
 .social_info{
     margin-top: 36px;
     margin-bottom: 64px;
 }
 
+/*footer bottom - social info - anchor link*/
 .social_info a{
     text-decoration: none;
     font-family: 'Montserrat';
@@ -676,6 +644,7 @@ input::placeholder{
     color: #FBFBFB;
 }
 
+/*footer bottom - footer container*/
 .footer .footer_bottom{
     text-align: center;
     font-family: 'Montserrat';
@@ -932,10 +901,7 @@ input::placeholder{
     .hero_left-statnum{
         font-size: 28px;
     }
-    .ourservices .bottom .content img {
-        width:50%;
-    }
-
+    
     .content_service{
         width:90%;
         padding:auto;
@@ -958,6 +924,7 @@ input::placeholder{
     }
 }
 
+/*styles for hamburger icons close and open*/
 .nav_responsive{
     display: flex;
     position: absolute;

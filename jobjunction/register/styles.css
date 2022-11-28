@@ -7,7 +7,15 @@
     box-sizing:border-box;
     list-style-type: none;
 }
-/**/
+
+/*body*/
+body{
+    background: #FBFBFB;
+    font-family: 'Zilla Slab', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Top - Header*/
 header{
     width:100%;
     padding:20px 16px;
@@ -16,27 +24,25 @@ header{
     align-items: center;
 }
 
+/*HeaderContainer*/
 .brand_box{
     display: flex;
     font-size: 20px;
     width:30%;
 }
 
+/*Header-brandbox-Logo*/
 .brand_box img{
     width:55%;
 }
 
-.brand_box h2{
-    color:lightcoral;
-    align-self: center;
-    -webkit-align-self:center;
-}
-
+/*header-navbar-container*/
 .nav_links{
     display: flex;
     align-items: center;
 }
 
+/*header-navbar-link-anchor*/
 .nav_links .nav_link a{
     margin-right: 15px;
     text-decoration: none;
@@ -48,6 +54,8 @@ header{
     color: #2F2F30;
 }
 
+
+/*header-navbar-link-container*/
 .nav_links .special_link{
     background: #2246C2;
     border-radius: 32px;
@@ -55,12 +63,13 @@ header{
     text-align: center;
 }
 
+/*header-navbar-link-anchor-SPECIAL*/
 .nav_links .special_link a{
     color:#FBFBFB;
     margin-left:15px;
 }
 
-
+/*hamburger icon container*/
 .menu_icon{
     display: none;
     position: absolute;
@@ -70,6 +79,7 @@ header{
     z-index:20;
 }
 
+/*hamburger-container-divs*/
 .menu_icon div{
     display:block;
     width:26px;
@@ -79,17 +89,132 @@ header{
     border-radius: 10px;
 }
 
-/**/
-body{
-    background: #FBFBFB;
-    font-family: 'Zilla Slab', serif;
-    font-family: 'Montserrat', sans-serif;
+/*topsection container*/
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding:32px;
+    position: relative;
 }
 
+/*topsection container - divs*/
+._hero{
+    width:50%;
+}
+
+/*topsection container - left heading*/
+.hero_left-heading{
+    font-family: 'Zilla Slab';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: #2F2F30;
+}
+
+/*topsection container - right image*/
+.hero_right img{
+    width:80%;
+    height:80%;
+}
+
+/*topsection highlight(color change)*/
+.special_primary{
+    font-family: 'Zilla Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #2246C2;
+}
+
+/*topsection highlight(font style change)*/
+.special_secondary{
+    font-family: 'Zilla Slab';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    color: #2F2F30;
+}
+
+/*topsection left container*/
+.hero_left{
+    margin-left:16px;
+}
+
+/*top section left - content*/
+.hero_left-content{
+    margin-top:16px;
+    width:75%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 128.69%;
+    color: #8F8F92;
+}
+
+/*top section left - statistics container*/
+.hero_left-statistics{
+    margin-top:32px;
+    display: flex;
+}
+
+/*top section left - statistic container*/
+.hero_left-stat{
+    margin-right:32px;
+    text-align:center;
+}
+
+/*top section left - statistic number*/
+.hero_left-statnum{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #2F2F30;
+}
+
+/*top section left - statistic label*/
+.hero_left-statlabel{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 128.69%;
+    text-align: center;
+    color: #8F8F92;
+}
+
+/*top section-right container*/
+.hero_right{
+    text-align:center;
+}
+
+/*lead-form container*/
+.header_bottom{
+    background-color: #2246C2;
+    padding:24px;
+    padding-left:48px;
+}
+
+/*lead-form container content*/
+.header_bottom p{
+    font-family: 'Zilla Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    color: #F8F8F8;
+}
+
+/*form tag*/
 form{
     padding-bottom: 12px;
 }
 
+/*input tag*/
 input{
     margin-top: 16px;
     width:30%;
@@ -101,6 +226,7 @@ input{
     margin-right: 16px;
 }
 
+/*target button*/
 .button_send{
     width:12%;
     margin-top: 16px;
@@ -119,6 +245,7 @@ input{
     color: #2246C2;
 }
 
+/*input placeholder*/
 input::placeholder{
     font-family: 'Montserrat';
     font-style: normal;
@@ -128,12 +255,12 @@ input::placeholder{
     color: #2F2F30;
 }
 
+/*target button icon*/
 .icon{
     margin-right:8px;
 }
 
-
-
+/*footer - header - head*/
 .footer .header .head{
     font-family: 'Zilla Slab';
     font-style: normal;
@@ -144,6 +271,7 @@ input::placeholder{
     text-align: center;
 }
 
+/*footer - header - description*/
 .footer .header .description{
     margin:16px 16%;
     text-align: center;
@@ -156,25 +284,25 @@ input::placeholder{
     color: #8F8F92;
 }
 
-
+/*footer*/
 .footer{
     margin-top:24px;
 }
 
+/*footer - body - content container*/
 .footer .body .content{
     background-color: #2246C2;
-}
-
-.footer .body .content{
     width:100%;
 }
 
+/*footer - body - content - form container*/
 .form_footer{
     width:80%;
     margin: auto;
     padding-top:32px;
 }
 
+/*footer - body - content - form container (input + button)*/
 .form_footer div{
     display: flex;
     flex-direction: column;
@@ -185,80 +313,12 @@ input::placeholder{
     margin: auto;
 }
 
+/*footer - body - content - form container (inputs)*/
 .form_footer div input{
     width:46%;
     margin-right:8px;
     margin-bottom: 16px;
 }
-
-
-.line{
-    border: 1px solid rgb(251 251 251 / 14%);
-    margin-bottom: 20px;
-}
-
-.footer .bottom{
-    background-color: #2246C2;
-}
-
-.footer .bottom .head{
-    font-family: 'Zilla Slab';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    color: #FBFBFB;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.footer .bottom .contact_info{
-    display: flex;
-    justify-content: center;
-}
-
-.footer .bottom .contact_info p{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 128.69%;
-    color: #FBFBFB;
-    margin-bottom: 40px;
-    margin-right:24px;
-}
-
-.footer .bottom .contact_info p span{
-    margin-right:8px;
-}
-
-.social_info{
-    margin-top: 36px;
-    margin-bottom: 64px;
-}
-
-.social_info a{
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 128.69%;
-    text-align: center;
-    letter-spacing: 0.09em;
-    color: #FBFBFB;
-}
-
-.footer .footer_bottom{
-    text-align: center;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 128.69%;
-    color: rgba(243, 237, 237, 0.62);
-    padding-bottom: 20px;
-}
-
 
 @media only screen and (max-width: 916px){
     .button_send{
@@ -274,6 +334,9 @@ input::placeholder{
 }
 
 @media only screen and (max-width: 724px){
+    .brand_box img {
+        width: 90%;
+    }
     .form_footer div{
         flex-direction: column;
     }
@@ -331,14 +394,6 @@ input::placeholder{
     .content_svg img{
         width:90%;
     }
-
-    .footer .bottom .contact_info {
-        align-items: center;
-        flex-direction: column;
-    }
-    .footer .bottom{
-        padding:16px;
-    }
 }
 
 @media only screen and (max-width: 375px){
@@ -362,6 +417,7 @@ input::placeholder{
     }
 }
 
+/*styles for hamburger open and close*/
 .nav_responsive{
     display: flex;
     position: absolute;
@@ -383,4 +439,66 @@ input::placeholder{
     height: 100vh;
     position: absolute;
     background: rgb(234, 234, 240);
+}
+
+/*modal container(backdrop)*/
+.modal_container{
+    background-color: #778cd575;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 20;
+}
+
+/*modal - modal container*/
+.modal{
+    text-align: center;
+    width:100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*modal - modal - bottom*/
+.modal_bottom{
+    background-color: #2246C2;
+    padding:24px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/*modal - modal - bottom - p*/
+.modal_bottom p{
+    font-family: 'Zilla Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    color: #F8F8F8;
+}
+
+/*modal - modal - bottom - button*/
+.modal_send{
+    cursor: pointer;
+    background: #FBFBFB;
+    border-radius: 3px;
+    margin-top: 12px;
+    border: none;
+    padding:16px 8px;
+    outline:none;
+    margin-right: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 128.69%;
+    text-align: center;
+    color: #2246C2;
+}
+
+.modalFunc{
+    display: none; /*block*/
 }
