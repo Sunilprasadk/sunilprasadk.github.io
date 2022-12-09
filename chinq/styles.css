@@ -13,12 +13,22 @@ a {
   text-decoration: none;
 }
 
+marquee,
+marquee a{
+  background-color: #814527;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 2px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 40px;
-  background-color: #F7F2F2;
+  background-color: #ffffff;
 }
 
 @media only screen and (max-width: 470px) {
@@ -57,7 +67,7 @@ header nav {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
   color: #624D49;
 }
@@ -114,10 +124,12 @@ ul li a {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   color: #624D49;
 }
+
+
 
 @media only screen and (max-width: 470px) {
   ul li a {
@@ -142,7 +154,7 @@ ul span {
   height: 6px;
   position: absolute;
   bottom: 0;
-  left: 62px;
+  left: 81px;
   background: #624D49;
   border-radius: 27px 20px 0px 0px;
   opacity: 0;
@@ -150,7 +162,7 @@ ul span {
 
 @media only screen and (max-width: 470px) {
   ul span {
-    left: 30px;
+    left: 53px;
   }
 }
 
@@ -472,6 +484,7 @@ ul a:hover + span {
   border-radius: 3px;
   padding: 12px;
   border: white;
+  margin-top:20px;
 }
 
 @media only screen and (max-width: 537px) {

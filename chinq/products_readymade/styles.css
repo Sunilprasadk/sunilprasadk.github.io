@@ -13,12 +13,22 @@ a {
   text-decoration: none;
 }
 
+marquee,
+marquee a{
+  background-color: #814527;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 2px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 40px;
-  background-color: #F7F2F2;
+  background-color: #ffffff;
 }
 
 @media only screen and (max-width: 470px) {
@@ -57,7 +67,7 @@ header nav {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
   color: #624D49;
 }
@@ -114,10 +124,11 @@ ul li a {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   color: #624D49;
 }
+
 
 @media only screen and (max-width: 470px) {
   ul li a {
@@ -145,7 +156,7 @@ ul span {
   left: 62px;
   background: #624D49;
   border-radius: 27px 20px 0px 0px;
-  opacity: 0;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 470px) {
@@ -183,7 +194,7 @@ ul a:hover + span {
   }
   
 .products{
-    background-color: rgba(217, 217, 217, 0.16);
+    background-color: white; /*rgba(217, 217, 217, 0.16);*/
 }
 
   .product_header h3 {
