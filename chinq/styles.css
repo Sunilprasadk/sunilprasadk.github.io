@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
@@ -6,7 +13,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -24,9 +32,15 @@ marquee a{
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 16px 40px;
   background-color: #ffffff;
 }
@@ -103,6 +117,8 @@ header nav a span {
 }
 
 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 16px 40px;
   background-color: #F1EFEF;
@@ -171,7 +187,7 @@ ul .nav-2 {
   height: 6px;
   position: absolute;
   bottom: 0;
-  left: 178px;
+  left: 215px;
   background: #624D49;
   border-radius: 27px 20px 0px 0px;
   opacity: 0;
@@ -179,7 +195,7 @@ ul .nav-2 {
 
 @media only screen and (max-width: 470px) {
   ul .nav-2 {
-    left: 128px;
+    left: 175px;
   }
 }
 
@@ -326,7 +342,9 @@ ul a:hover + span {
   }
   
   .productsoverview .body {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 40px;
   }
@@ -334,6 +352,7 @@ ul a:hover + span {
   @media only screen and (max-width: 670px) {
     .productsoverview .body {
       margin: 8px;
+      -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
     }
   }
@@ -341,6 +360,7 @@ ul a:hover + span {
   @media only screen and (max-width: 340px) {
     .productsoverview .body {
       margin: 8px;
+      -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
     }
   }
@@ -399,19 +419,30 @@ ul a:hover + span {
   }
   
   .chinqooperprocess .processes {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   
   @media only screen and (max-width: 670px) {
     .chinqooperprocess .processes {
-      justify-content: space-evenly;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
     }
   }
   
   .chinqooperprocess .processes .process {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 8%;
     margin: 16px;
     margin-right: 48px;
@@ -515,6 +546,46 @@ ul a:hover + span {
     margin: auto;
     margin-top: 16px;
   }
+}
+
+.contactform form input::-webkit-input-placeholder {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #2F2F30;
+}
+
+.contactform form input::-moz-placeholder {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #2F2F30;
+}
+
+.contactform form input:-ms-input-placeholder {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #2F2F30;
+}
+
+.contactform form input::-ms-input-placeholder {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #2F2F30;
 }
 
 .contactform form input::placeholder {
@@ -664,6 +735,8 @@ footer .contact_details .contact_detail a {
 }
 
 footer .social_links {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -689,4 +762,3 @@ footer .footer_bottom {
   color: #FBFBFB;
   margin-bottom: 0;
 }
-

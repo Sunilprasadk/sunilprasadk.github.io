@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
@@ -6,7 +13,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -24,9 +32,15 @@ marquee a{
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 16px 40px;
   background-color: #ffffff;
 }
@@ -103,6 +117,8 @@ header nav a span {
 }
 
 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 16px 40px;
   background-color: #F1EFEF;
@@ -153,7 +169,7 @@ ul span {
   height: 6px;
   position: absolute;
   bottom: 0;
-  left: 62px;
+  left: 81px;
   background: #624D49;
   border-radius: 27px 20px 0px 0px;
   opacity: 1;
@@ -161,7 +177,7 @@ ul span {
 
 @media only screen and (max-width: 470px) {
   ul span {
-    left: 30px;
+    left: 53px;
   }
 }
 
@@ -170,7 +186,7 @@ ul .nav-2 {
   height: 6px;
   position: absolute;
   bottom: 0;
-  left: 178px;
+  left: 215px;
   background: #624D49;
   border-radius: 27px 20px 0px 0px;
   opacity: 0;
@@ -178,7 +194,7 @@ ul .nav-2 {
 
 @media only screen and (max-width: 470px) {
   ul .nav-2 {
-    left: 128px;
+    left: 175px;
   }
 }
 
@@ -191,6 +207,7 @@ ul a:hover + span {
     padding: 24px;
     text-align: center;
     background-color: rgba(217, 217, 217, 0.16);
+    margin-bottom: 24px;
   }
   
 .products{
@@ -212,6 +229,8 @@ ul a:hover + span {
 
 @media only screen and (max-width: 980px) {
     .products {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       padding: 16px;
     }
@@ -230,6 +249,8 @@ ul a:hover + span {
     padding: 24px;
     width: 70%;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 48px;
     position: relative;
@@ -248,7 +269,10 @@ ul a:hover + span {
   
   @media only screen and (max-width: 980px) {
     .productcard {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       width: 30%;
       padding: 20px;
       margin: 0px 24px 0px 0;
@@ -376,11 +400,11 @@ ul a:hover + span {
     border-radius: 3px;
     padding: 12px;
     margin-left: 28px;
-    color: #FBFBFB;
     border: 1px solid #EF8410;
     border-radius: 6px;
     color: #EF8410;
     margin-top: 8px;
+    background-color: #f9f9f9;
   }
   
   @media only screen and (max-width: 980px) {
@@ -394,6 +418,7 @@ ul a:hover + span {
     padding-bottom: 40px;
     text-align: center;
     background-color: rgba(217, 217, 217, 0.16);
+    margin-top: 24px;
 }
 
 .productcard_footer .footer p {
@@ -490,6 +515,8 @@ footer .contact_details .contact_detail a {
 }
 
 footer .social_links {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -515,4 +542,3 @@ footer .footer_bottom {
   color: #FBFBFB;
   margin-bottom: 0;
 }
-

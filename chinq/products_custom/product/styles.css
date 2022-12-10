@@ -283,8 +283,8 @@ ul a:hover + span {
   .product_images{
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 65% 65%;
-    grid-template-columns: 65% 65%;
+    -ms-grid-columns: 35% 65%;
+    grid-template-columns: 35% 65%;
   }
 
 @media only screen and (max-width: 690px){

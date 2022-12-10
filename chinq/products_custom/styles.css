@@ -153,7 +153,7 @@ ul span {
   height: 6px;
   position: absolute;
   bottom: 0;
-  left: 62px;
+  left: 81px;
   background: #624D49;
   border-radius: 27px 20px 0px 0px;
   opacity: 0;
@@ -161,7 +161,7 @@ ul span {
 
 @media only screen and (max-width: 470px) {
   ul span {
-    left: 30px;
+    left: 53px;
   }
 }
 
@@ -170,15 +170,15 @@ ul .nav-2 {
   height: 6px;
   position: absolute;
   bottom: 0;
-  left: 178px;
+  left: 215px;
   background: #624D49;
   border-radius: 27px 20px 0px 0px;
-  opacity: 0;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 470px) {
   ul .nav-2 {
-    left: 128px;
+    left: 175px;
   }
 }
 
@@ -191,6 +191,7 @@ ul a:hover + span {
     padding: 24px;
     text-align: center;
     background-color: rgba(217, 217, 217, 0.16);
+    margin-bottom: 24px;
   }
   
 .products{
@@ -233,6 +234,14 @@ ul a:hover + span {
     margin: auto;
     display: flex;
     margin-bottom: 24px;
+    position: relative;
+  }
+
+  .offer{
+    position: absolute;
+    top: -32px;
+    width: 65px;
+    left: -15px;
   }
   
   @media only screen and (max-width: 980px) {
@@ -365,11 +374,11 @@ ul a:hover + span {
     border-radius: 3px;
     padding: 12px;
     margin-left: 28px;
-    color: #FBFBFB;
     border: 1px solid #EF8410;
     border-radius: 6px;
     color: #EF8410;
     margin-top: 8px;
+    background-color: #f9f9f9;
   }
   
   @media only screen and (max-width: 980px) {
@@ -463,6 +472,7 @@ ul a:hover + span {
     padding-bottom: 40px;
     text-align: center;
     background-color: rgba(217, 217, 217, 0.16);
+    margin-top: 24px;
 }
 
 .productcard_footer .footer p {
@@ -584,4 +594,3 @@ footer .footer_bottom {
   color: #FBFBFB;
   margin-bottom: 0;
 }
-
