@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textPrimary{
+    color:#333333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input{
+    background-color: #ffffff;
+    font-size: 16px;
+    padding:8px;
+    border: 2px solid #80cfaa;
+    outline: #80cfaa;
+    margin: 8px 0px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.normalButton{
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: #f5f5f582;
+    border: 2px solid #80cfaa;
+    outline: #80cfaa;
+    color:#80cfaa;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#actionButton{
+    display: inline-block;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #f5f5f5;
+
+    position: absolute;
+    right: 0;
+    top: 14%;
+}
+
+input:placeholder-shown{
+    color: #6c757d;
+    font-weight: 500;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+main{
+    margin-top:16px;
+}
+
+#todoForm{
+    width:50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+#todoForm input{
+    width:100%;
+}
+
+#todoForm h2{
+    font-size: 24px;
+}
+
+#todoForm > div{
+    position: relative;
+    margin: 20px 0;
+}
+
+
+
+
+#todoLists{
+    width:50%;
+    margin: auto;
+}
+
+#todoLists .todoList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+#todoLists .todoList img{
+    margin:2px;
+    cursor: pointer;
+}
+
+#clearButton{
+    width: max-content;
+    margin: auto;
+    margin-top:32px;
+}
+
+
+.completed{
+    color:#949494;
+    font-weight: 700;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.appearCompletedIcon{
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+    #todoForm{
+        width: 80%;
+    }
+
+    #todoLists{
+        width:80%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    #todoForm{
+        width: 90%;
+    }
+
+    #todoLists{
+        width:90%;
+    }
+}
